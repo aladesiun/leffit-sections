@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import Navbar from './components/Navbar.vue';
-import Cart from './page/Cart.vue';
+import SectionProduct from './page/SectionProduct.vue';
 </script>
 
 <template>
   <Navbar />
-  <Cart />
+
+  <SectionProduct />
 </template>
 
 <style scoped></style>
