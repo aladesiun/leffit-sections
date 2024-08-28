@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import Navbar from './components/Navbar.vue';
-import Home from './page/Home.vue';
+import Checkout from './page/Checkout.vue';
 </script>
 
 <template>
   <Navbar />
-  <Home />
+  <Checkout />
 </template>
 
 <style scoped>
