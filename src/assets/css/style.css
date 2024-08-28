@@ -1,13 +1,24 @@
-*.html{
-    padding: 0;
-    margin: 0;
+*.html {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-family: "Roboto", system-ui!important;
+body {
+  font-family: "Roboto", system-ui !important;
 }
 
+.input-field {
+  padding: 0.8rem 2rem 0.8rem 1.3rem !important;
+}
 
-.input-field{
-    padding: .8rem 2rem .8rem 1.3rem!important;
+@media only screen and (max-width: 1220px) {
+  .cartLayout {
+    display: block;
+  }
+  .cartTwo {
+    margin-top: 20px;
+  }
+  .cartLayout {
+    width: 98%;
+  }
 }
