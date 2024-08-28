@@ -113,13 +113,54 @@
                             Metal: Gold plated
                         </p>
 
-                        <div class="flex gap-4">
-                            <div class="w-[25px] h-[25px] border rounded-full border-dark-text p-[1px]">
-                               <img src='../assets/images/Silver.png'   alt="sl"  />
+                        <div class="flex gap-3 mt-3">
+                            <div class="w-[25px] h-[25px] rounded-full border-dark-text p-[1.5px]">
+                                <img src='../assets/images/Silver.png' alt="sl" />
                             </div>
-                            <div class="w-[25px] h-[25px] border rounded-full border-dark-text p-[1px]">
-                               <img src='../assets/images/Gold.png'   alt="sl"  />
+                            <div class="w-[25px] h-[25px] border rounded-full border-dark-text p-[1.5px]">
+                                <img src='../assets/images/Gold.png' alt="sl" />
                             </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="flex justify-between items-start mt-4">
+                            <p class="text-dark-text text-xs font-normal">
+                                Select Size
+                            </p>
+
+                            <p class="text-dark-text text-xs font-normal underline">
+                                Need help with the size?
+                            </p>
+                        </div>
+
+                        <div class=" flex gap-1">
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+
                         </div>
 
                     </div>
