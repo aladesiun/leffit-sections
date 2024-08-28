@@ -1,7 +1,5 @@
-<script setup lang="ts">
-</script>
-
 <template>
+    <TopbarPromo/>
 <nav class="bg-white border-b border-pink-200">
   <div class="container mx-auto flex items-center justify-between py-4">
     <!-- Logo -->
@@ -72,5 +70,17 @@
 </nav>
 
 </template>
-
+<script>
+import TopbarPromo from './TopbarPromo.vue';
+export default {
+    components: {
+        TopbarPromo,
+    },
+    setup() {
+       
+        return {
+        };
+    },
+};
+</script>
 <style scoped></style>

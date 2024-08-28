@@ -13,7 +13,7 @@
 
                 </div>
 
-                <div class="w-full border">
+                <div class="w-full ">
 
                     <p class="text-[#9E9E9E] font-medium">Casa Jewelry</p>
                     <p class="text-dark-text font-bold">Casa Jewelry Ooringen DMC XXL Goud vergule corringen - 70mm</p>
@@ -61,7 +61,7 @@
 
                     <div class="flex justify-start items-center gap-6 mt-3">
                         <div class="">
-                            <select class="w-[100px] h-[50px] border px-3">
+                            <select class="w-[100px] h-[50px] border  px-3">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>

@@ -3,6 +3,7 @@
     <BlocksProducts/>
     <SectionCheckout/>
     <UspSlider/>
+    
 </template>
 <script setup lang="ts">
 import SectionCheckout from '.././components/SectionCheckout.vue';

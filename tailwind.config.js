@@ -10,7 +10,8 @@ export default {
         'dark-text': '#27251f',
         'light-gray': '#d0d1d2',
         'footer-gray': '#f4f3f1',
-        'gray-text': '#d0d1d2'
+        'gray-text': '#d0d1d2',
+         primary: "#ffcad4"
       },
     },
   },
