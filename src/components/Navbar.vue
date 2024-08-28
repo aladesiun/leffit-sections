@@ -19,7 +19,7 @@
 
                 <div>
                     <div>
-                        <input type="text" class="text-dark-text border border-light-gray input-field focus:border focus:border" placeholder="" />
+                        <input type="text" class="text-dark-text border border-light-gray input-field focus:border focus:border-dark-text placeholder:text-xs placeholder:text-dark-text" placeholder="To search" />
                     </div>
                 </div>
             </div>
