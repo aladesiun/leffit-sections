@@ -49,7 +49,6 @@
 
                 </div>
 
-
                 <div class="w-[900px] border h-[500px]">
 
                     <p class=" text-dark-text text-[28px] font-bold mb-3">
@@ -105,6 +104,7 @@
                                 (66)
                             </p>
                         </div>
+
                     </div>
 
 
@@ -115,7 +115,7 @@
 
                         <div>
                             <div class="w-[30px] h-[30px] border rounded-full border-dark-text">
-
+                               <img src='@/assets/images/Silver.png'   alt="sl"  />
                             </div>
                         </div>
 
