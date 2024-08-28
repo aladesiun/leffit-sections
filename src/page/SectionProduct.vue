@@ -112,6 +112,13 @@
                         <p class="text-dark-text text-base font-normal">
                             Metal: Gold plated
                         </p>
+
+                        <div>
+                            <div class="w-[30px] h-[30px] border rounded-full border-dark-text">
+
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
