@@ -4,7 +4,7 @@
 <template>
     <div class="w-[1200px] border mx-auto flex gap-3 justify-between items-start">
 
-        <div class="w-full border h-[400px] px-3 pt-5">
+        <div class="w-full border h-auto px-3 pt-5">
 
             <div class="flex justify-between items-start">
 
@@ -12,12 +12,11 @@
 
                 </div>
 
-                <div class="border">
+                <div>
                     <p class="text-[#9E9E9E] font-medium">Casa Jewelry</p>
                     <p class="text-dark-text font-bold">Casa Jewelry Ooringen DMC XXL Goud vergule corringen - 70mm</p>
 
                     <div class="flex justify-start items-center mt-4">
-
                         <div id="Ratings" class="flex gap-1">
                             <span>
                                 <svg width="17" height="17" viewBox="0 0 6 6" fill="none"
@@ -52,14 +51,16 @@
                                 </svg>
                             </span>
                         </div>
+
                         <p class="text-dark-text font-bold ml-1">
                             (3)
                         </p>
                     </div>
 
-                    <div class="flex mt-3">
-                        <div>
-                            <select class="w-[90px] h-[40px] border px-3">
+
+                    <div class="flex justify-start items-center gap-6 mt-3">
+                        <div class="">
+                            <select class="w-[100px] h-[50px] border px-3">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -76,8 +77,24 @@
                             </svg>
                         </span>
 
-
+                        <span>
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 18C2.45 18 1.97933 17.8043 1.588 17.413C1.19667 17.0217 1.00067 16.5507 1 16V3H0V1H5V0H11V1H16V3H15V16C15 16.55 14.8043 17.021 14.413 17.413C14.0217 17.805 13.5507 18.0007 13 18H3ZM13 3H3V16H13V3ZM5 14H7V5H5V14ZM9 14H11V5H9V14Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
                     </div>
+
+
+                    <div class="text-[#15562C] w-fit font-medium px-3 text-sm mt-3 border border-[#15562C]">
+                        Op voorraad
+                    </div>
+
+                    <p class="text-[#15562C] font-medium mt-1">
+                        Voor 21:00 uuir besteld, dinsdagin huis
+                    </p>
                 </div>
 
                 <div>
@@ -86,9 +103,68 @@
                     </p>
                 </div>
             </div>
+
+
+            <p class="text-right text-dark-text">
+                verkoop door: bol.com retourdeals
+            </p>
+
         </div>
 
-        <div class="w-[500px] border h-full">
+
+        <div class="w-[500px] border h-full pt-6">
+
+            <p class="text-left text-dark-text font-semibold pl-4">
+                Overzicht
+            </p>
+
+            <div>
+                <ul class="border-b border-b-black pb-4 px-4">
+                    <li>
+                        <div class="flex justify-between">
+                            <p>Artikelen</p>
+                            <p class=" text-dark-text font-semibold">
+                                € 939999,50
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between">
+                            <p>Artikelen</p>
+                            <p class=" text-[#11873A] font-semibold">
+                                € 0,00
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="text-left text-[#311AC1] font-medium pt-2 pl-4">
+                    Cadeaukaartcode
+                </p>
+
+                <div class="bg-[#eab30833] h-[40px] flex justify-between items-center mt-4 px-4">
+                    <p class="text-dark-text font-medium">
+                        Nog to betalen
+                    </p>
+
+                    <p class="text-dark-text font-medium">
+                        € 0,00
+                    </p>
+                </div>
+
+                <div class="px-3 mt-6">
+                    <button class="w-full bg-[#0e43ef] h-[40px] rounded-[4px] text-white text-sm">
+                        Verder naar bestellen
+                    </button>
+                </div>
+
+                <div>
+                    <p class="text-dark-text text-sm font-medium text-center">
+                        of kies voor gemak met Achteraf betalen
+                    </p>
+                </div>
+
+            </div>
 
         </div>
     </div>
