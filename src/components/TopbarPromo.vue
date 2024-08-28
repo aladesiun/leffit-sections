@@ -1,7 +1,7 @@
 <template>
     <div class="p-5 bg-primary">
         <swiper class="bg-primary"  :autoplay="{
-      delay: 500,
+      delay: 2500,
       disableOnInteraction: false,
     }" parallax :slides-per-view="1" :space-between="50" @swiper="onSwiper"
             @slideChange="onSlideChange" :auto   :modules="modules">
