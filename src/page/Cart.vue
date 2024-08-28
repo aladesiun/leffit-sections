@@ -2,17 +2,19 @@
 </script>
 
 <template>
-    <div class="w-[1200px] border mx-auto flex gap-3 justify-between items-start">
+
+    <div class="w-[1200px] mx-auto flex gap-3 justify-between items-start mt-14 cartLayout">
 
         <div class="w-full border h-auto px-3 pt-5">
 
-            <div class="flex justify-between items-start">
+            <div class="flex lg:flex-row flex-col gap-4 justify-between items-start">
 
-                <div id="product-image" class="h-[150px] w-[150px] border">
+                <div id="product-image" class="min-h-[150px] sm:min-w-[150px] min-w-full border">
 
                 </div>
 
-                <div>
+                <div class="w-full border">
+
                     <p class="text-[#9E9E9E] font-medium">Casa Jewelry</p>
                     <p class="text-dark-text font-bold">Casa Jewelry Ooringen DMC XXL Goud vergule corringen - 70mm</p>
 
@@ -57,7 +59,6 @@
                         </p>
                     </div>
 
-
                     <div class="flex justify-start items-center gap-6 mt-3">
                         <div class="">
                             <select class="w-[100px] h-[50px] border px-3">
@@ -87,7 +88,6 @@
                         </span>
                     </div>
 
-
                     <div class="text-[#15562C] w-fit font-medium px-3 text-sm mt-3 border border-[#15562C]">
                         Op voorraad
                     </div>
@@ -95,29 +95,28 @@
                     <p class="text-[#15562C] font-medium mt-1">
                         Voor 21:00 uuir besteld, dinsdagin huis
                     </p>
+
                 </div>
 
                 <div>
-                    <p class="text-dark-text font-medium">
+                    <p class="text-dark-text font-medium whitespace-nowrap">
                         € 939999,50
                     </p>
                 </div>
             </div>
 
-
-            <p class="text-right text-dark-text">
+            <p class="text-right text-dark-text mt-3">
                 verkoop door: bol.com retourdeals
             </p>
 
         </div>
 
-
-        <div class="w-[500px] border h-full pt-6">
+        <div class="sm:w-[500px] w-full border h-full pt-6 cartTwo ">
 
             <p class="text-left text-dark-text font-semibold pl-4">
                 Overzicht
             </p>
-
+            
             <div>
                 <ul class="border-b border-b-black pb-4 px-4">
                     <li>
@@ -158,16 +157,18 @@
                     </button>
                 </div>
 
-                <div>
+                <div class="mt-9 pb-4">
                     <p class="text-dark-text text-sm font-medium text-center">
                         of kies voor gemak met Achteraf betalen
                     </p>
                 </div>
-
             </div>
 
         </div>
+
     </div>
+
+
 </template>
 
 <style scoped></style>
