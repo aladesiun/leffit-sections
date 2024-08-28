@@ -1,6 +1,6 @@
 <template>
     <div class="w-full bg-gray-50 py-8">
-      <swiper :slides-per-view="4" space-between="30" loop="true" class="mySwiper">
+      <swiper  Pagination :slides-per-view="4" space-between="30" loop="true" class="mySwiper">
         <swiper-slide v-for="(item, index) in items" :key="index">
           <div class="flex flex-col items-center text-center p-4">
             <div class="mb-4">
@@ -18,6 +18,8 @@
   
   <script setup>
   import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination } from 'swiper/modules';
+
   import 'swiper/swiper-bundle.css';
   
   const items = [
