@@ -1,5 +1,5 @@
 <template>
-    <div class="p-5 bg-primary">
+    <div class="p-5 py-1 bg-primary">
         <swiper class="bg-primary"  :autoplay="{
       delay: 2500,
       disableOnInteraction: false,
@@ -8,7 +8,7 @@
             <swiper-slide v-for="item in 5">
                 <div class="text-center block bg-primary">
                     <p class="fontsemi-bold text-underline text-center">]NIEUW:</p>
-                    <p class="text-sm text-center py-2">Ontdek nieuwe stijlen</p>
+                    <p class="text-sm text-center py-1">Ontdek nieuwe stijlen</p>
                 </div>
             </swiper-slide>
         </swiper>
