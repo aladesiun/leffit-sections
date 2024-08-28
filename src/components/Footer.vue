@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-gray-100 text-gray-700 py-8">
+    <footer class="bg-footer-gray text-gray-700 py-8">
         <div class="container mx-auto flex px-10 justify-center">
             <!-- Newsletter Section -->
             <div class="flex flex-col md:flex-row justify-center items-center mb-8 mx-auto px-4 ">
@@ -8,10 +8,10 @@
                     <p class="text-sm">Nieuwe items, aanbiedingen, stylingtips en 10% welkomstkorting - nu aanmelden
                         voor de nieuwsbrief!</p>
                 </div>
-                <form class="flex md:w-1/2 justify-center md:justify-end">
+                <form class="sm:flex md:w-1/2 justify-center md:justify-end">
                     <input type="email" placeholder="Voer e-mailadres in"
-                        class="border border-gray-300 px-4 py-2 focus:outline-none">
-                    <button class="bg-gray-500 text-white px-6 py-2 hover:bg-gray-600">AANMELDEN</button>
+                        class="w-full sm:mb-0 mb-4 border border-gray-300 px-4 py-2 focus:outline-none">
+                    <button class="custom-btn">AANMELDEN</button>
                 </form>
             </div>
         </div>
