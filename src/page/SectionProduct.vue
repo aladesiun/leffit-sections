@@ -113,9 +113,12 @@
                             Metal: Gold plated
                         </p>
 
-                        <div>
-                            <div class="w-[30px] h-[30px] border rounded-full border-dark-text">
-                               <img src='@/assets/images/Silver.png'   alt="sl"  />
+                        <div class="flex gap-4">
+                            <div class="w-[25px] h-[25px] border rounded-full border-dark-text p-[1px]">
+                               <img src='../assets/images/Silver.png'   alt="sl"  />
+                            </div>
+                            <div class="w-[25px] h-[25px] border rounded-full border-dark-text p-[1px]">
+                               <img src='../assets/images/Gold.png'   alt="sl"  />
                             </div>
                         </div>
 
