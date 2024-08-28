@@ -49,7 +49,11 @@
 
                 </div>
 
-                <div class="w-[900px] border h-[500px]">
+
+
+
+
+                <div id="product-details" class="w-[780px] border h-[500px]">
 
                     <p class=" text-dark-text text-[28px] font-bold mb-3">
                         Double heart sparkling ring
@@ -125,6 +129,8 @@
 
 
                     <div>
+
+
                         <div class="flex justify-between items-start mt-4">
                             <p class="text-dark-text text-xs font-normal">
                                 Select Size
@@ -135,9 +141,9 @@
                             </p>
                         </div>
 
-                        <div class=" flex gap-1">
+                        <div class=" grid grid-cols-6 gap-3 w-[95%] mt-2.5">
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-darkText">
                                 24
                             </div>
 
@@ -160,7 +166,26 @@
                             <div class="border w-[62px] h-[45px] flex_center text-xs">
                                 24
                             </div>
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
+                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                                24
+                            </div>
 
+                        </div>
+
+                        <div class="mt-3">
+
+                            <button
+                                class=" tracking-widest ease-in-out duration-150 w-full h-[47px] text-sm border-dark-border border text-dark-text font-normal hover:bg-dark-text hover:text-white mb-6">
+                                CLICK & COLLLECT IN STORE
+                            </button>
+
+                            <button
+                                class="w-full h-[47px] ase-in-out duration-150 tracking-widest text-sm border-transparent text-white bg-dark-border border font-normal hover:bg-[#ffcad4]">
+                                IN THE SHOPPING CART
+                            </button>
                         </div>
 
                     </div>
