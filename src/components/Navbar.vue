@@ -42,25 +42,26 @@ const hideDropdownEarrings = () => {
     showEarrings.value = false;
 };
 
-
 // State to track sidebar visibility
 const isSidebarVisible = ref(false);
 
+// State to track NewInsidebar visibility
+const isNewInSidebarVisible = ref(false);
+
+
 // Function to toggle the sidebar
 const toggleSidebar = () => {
-  isSidebarVisible.value = !isSidebarVisible.value;
+    isSidebarVisible.value = !isSidebarVisible.value;
 };
-
-
-
-
-
+const toggleNewInSidebar = () => {
+    isNewInSidebarVisible.value = !isNewInSidebarVisible.value;
+}
 </script>
 
 <template>
+
     <nav class="w-full">
         <div class="border-b-4 border-b-[#ffcad4]">
-
             <!----------Desktop-NAV------------>
             <div class="max_width mx-auto lg:flex hidden items-center justify-between py-4 ">
                 <div class="flex items-center space-x-4">
@@ -128,7 +129,6 @@ const toggleSidebar = () => {
                     </div>
                 </div>
             </div>
-
 
             <!--------MOBILE-NAV--------->
             <div class="max_width mx-auto w-full flex items-center justify-between py-4 lg:hidden block">
@@ -329,12 +329,13 @@ const toggleSidebar = () => {
         </div>
     </nav>
 
+
+
+
     <!--------Sidebar ------------>
-    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0 left-[1]', { hidden: !isSidebarVisible }]">
+    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0', { sidebarHidden: !isSidebarVisible }]">
         <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
-            <div class="flex_start gap-4 cursor-pointer"
-            @click="toggleSidebar"
-            >
+            <div class="flex_start gap-4 cursor-pointer" @click="toggleSidebar">
                 Close
                 <span>
                     <svg width="23" height="23" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,7 +346,7 @@ const toggleSidebar = () => {
             </div>
         </div>
 
-        <div> 
+        <div>
             <ul class="px-2">
 
                 <li class="flex_between py-5 border-b border-b-[#d0d1d2] px-5 cursor-pointer">
@@ -389,6 +390,42 @@ const toggleSidebar = () => {
         </div>
     </div>
 
+
+
+    <!---------NewInSidebar------>
+    <div id="NewInSidebar"
+        :class="['w-[95%] h-[100vh] border bg-white fixed top-0 z-40', { sidebarHidden: !isNewInSidebarVisible }]">
+        <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
+            <div class="flex_start gap-4 cursor-pointer" @click="toggleNewInSidebar">
+                Close
+                <span>
+                    <svg width="23" height="23" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 17.625L17.625 1M17.625 17.625L1 1" stroke="black" stroke-width="0.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+
+        <div>
+            <ul class="px-2">
+
+                <li @click="toggleNewInSidebar"
+                    class="flex_between py-5 border-b border-b-[#d0d1d2] px-5 cursor-pointer">
+                    <p>NEW IN</p>
+                    <span>
+                        <svg width="11" height="18" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
 </template>
 
 <style scoped>
@@ -399,19 +436,20 @@ const toggleSidebar = () => {
     left: -100%;
     transition: left .5s cubic-bezier(0, 1, 0.5, 1);
 }
+
 /* Initial styles */
 .cursor-pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* Hide the sidebar by default */
-.hidden {
-  display: none;
+.sidebarHidden {
+    display: none;
 }
 
+
 .sidebar {
-  display: block;
-  left: ;
-  /* Ensure sidebar block display when not hidden */
+    display: block;
+    /* Ensure sidebar block display when not hidden */
 }
 </style>
