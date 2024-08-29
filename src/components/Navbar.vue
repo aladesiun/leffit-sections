@@ -79,9 +79,8 @@
         <div class="w-full border-b border-b-[#d0d1d2] h-[47px]">
             <div class="w-[1250px] mx-auto h-full">
                 <div class=" flex justify-start items-center space-x-6 h-full">
-
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             NEW IN
                             <span class="arrow_nav">
@@ -93,9 +92,8 @@
                             </span>
                         </div>
                     </router-link>
-
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             CHARMS & BRACELETS
                             <span class="arrow_nav">
@@ -108,7 +106,7 @@
                         </div>
                     </router-link>
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             RINGS
                             <span class="arrow_nav">
@@ -121,7 +119,7 @@
                         </div>
                     </router-link>
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             CHAINS
                             <span class="arrow_nav">
@@ -134,17 +132,20 @@
                         </div>
                     </router-link>
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             EARRINGS
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 4L4 1L1 4" stroke="black" stroke-width="0.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+                            <span class="arrow_nav">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 4L4 1L1 4" stroke="black" stroke-width="0.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
                         </div>
                     </router-link>
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             COLLECTIONS
                             <span class="arrow_nav">
@@ -157,8 +158,8 @@
                         </div>
                     </router-link>
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
-                        <div class="flex_start">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
+                        <div class="flex_start gap-1.5">
                             GIFTS
                             <span class="arrow_nav">
                                 <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
@@ -170,8 +171,8 @@
                         </div>
                     </router-link>
                     <router-link to="/"
-                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4]">
-                        <div class="flex_start">
+                        class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
+                        <div class="flex_start gap-1.5">
                             DISCOVER
                             <span class="arrow_nav">
                                 <svg width="8" height="5" viewBox="0 0 8 5" fill="none"

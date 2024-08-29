@@ -50,7 +50,11 @@ body {
 }
 
 .arrow_nav svg{
-    transform: rotate(180deg);
+    transform: rotate(180deg)!important;
+}
+.nav_links:hover div .arrow_nav svg{
+  transform: rotate(0deg)!important;
+  transition:all .1s;
 }
 
 
