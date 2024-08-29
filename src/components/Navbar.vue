@@ -321,16 +321,6 @@ const hideDropdownEarrings = () => {
 
 </template>
 <script>
-import TopbarPromo from './TopbarPromo.vue';
-export default {
-    components: {
-        TopbarPromo,
-    },
-    setup() {
-       
-        return {
-        };
-    },
-};
+
 </script>
 <style scoped></style>
