@@ -1,8 +1,5 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
+
     <div class="w-[1250px] mx-auto flex gap-3 justify-between items-start mt-14 cartLayout">
         <div class="w-full">
             <ul class="flex gap-2">
@@ -18,7 +15,6 @@
                     </span>
                 </li>
 
-
                 <li class="flex justify-start items-center">
                     <p class="text-right text-dark-text text-xs">Rings</p>
 
@@ -28,7 +24,6 @@
                         </svg>
                     </span>
                 </li>
-
 
                 <li class="flex justify-start items-center">
                     <p class="text-right text-dark-text text-xs">Rings</p>
@@ -42,18 +37,49 @@
 
             </ul>
 
+            <div class="flex md:flex-row flex-col justify-between items-start w-full gap-8">
 
-            <div class="flex justify-between items-start w-full gap-8">
+                <div id="ProductImage" class="w-full h-auto">
 
-                <div class="w-full h-[600px] border">
+                    <div class="w-full md:h-[600px] sm:h-[400px] h-[300px] product_wrap">
+                        <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                            alt="Prd-Image" />
+                    </div>
 
+                    <div class=" w-full mt-3">
+                        <ul class="flex flex-wrap justify-start gap-3 items-start">
+
+                            <li class="product_list">
+
+                                <fwb-button @click="showModal">
+                                    <div class="w-[100px] border  h-[100px] border-dark-text rounded-md py-2 px-3">
+                                        <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                                            alt="Prd-Image" />
+                                    </div>
+                                </fwb-button>
+
+                            </li>
+
+                            <li>
+                                <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                    <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                        alt="Prd-Image" />
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                    <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                        alt="Prd-Image" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
+                <div id="product-details" class="w-[780px] product_details">
 
-
-                <div id="product-details" class="w-[780px] border h-[500px]">
-
-                    <p class=" text-dark-text text-[28px] font-bold mb-3">
+                    <p class=" text-dark-text md:text-[28px] text-xl font-bold mb-3">
                         Double heart sparkling ring
                     </p>
 
@@ -109,7 +135,6 @@
 
                     </div>
 
-
                     <div class="mt-8">
                         <p class="text-dark-text text-base font-normal">
                             Metal: Gold plated
@@ -136,35 +161,36 @@
                             </p>
                         </div>
 
-                        <div class=" grid grid-cols-6 gap-3 w-[95%] mt-2.5">
+                        <div class=" grid md:grid-cols-6 sm:grid-cols-4 grid-cols-3 gap-3 w-[95%] mt-2.5">
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-darkText">
-                                24
-                            </div>
-
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div
+                                class="border w-[62px] h-[45px] flex_center text-xs hover:bg-darkText hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
+                                24
+                            </div>
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
@@ -185,8 +211,9 @@
 
 
                         <div class="flex gap-5">
+
                             <div class="flex justify-start items-center  mt-8">
-                                <span class="mr-4">
+                                <span class="mr-2">
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -202,7 +229,8 @@
                             </div>
 
                             <div class="flex justify-start items-center mt-8">
-                                <span>
+
+                                <span class="mr-2">
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -211,110 +239,70 @@
                                     </svg>
                                 </span>
 
-
                                 <p class="text-dark-text text-xs font-medium">
-                                    Opslaan op verlanglijst
+                                    Gift wrapping
                                 </p>
                             </div>
+
                         </div>
 
 
+                        <div id="Accordion" class="mt-12 accordion_wrap">
+                            <fwb-accordion>
+                                <fwb-accordion-panel>
+                                    <fwb-accordion-header>PRODUCT DETAILS</fwb-accordion-header>
+                                    <fwb-accordion-content>
+                                        <div>
+                                            <p class="mb-2 text-[#71706c]">
+                                                The Double Heart Sparkling Ring features two heart-shaped
+                                                clear cubic zirconia set at different angles to symbolize
+                                                the love between a mother and her child. The ring band is
+                                                accented with a half row of pavé and is attached asymmetrically
+                                                to the two hearts for a more modern look. A gift that celebrates
+                                                all that your mother has done for you.
+                                            </p>
+                                        </div>
+                                    </fwb-accordion-content>
+                                </fwb-accordion-panel>
 
-                        <div id="Accordion">
+                                <fwb-accordion-panel>
+                                    <fwb-accordion-header>SIZE ADVICE</fwb-accordion-header>
+                                    <fwb-accordion-content>
+                                        <div>
+                                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                                Use the dropdown menus below to find your circumference or diameter.
+                                                Then use the list to see which ring size fits your measurement result,
+                                                to find your ideal size.
+                                            </p>
+                                            <p class="text-gray-500 dark:text-gray-400">
+                                                Check out the <a href="https://flowbite.com/figma/"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Figma
+                                                    design system</a> based on
+                                                the utility classes from Tailwind CSS and components from Flowbite.
+                                            </p>
+                                        </div>
+                                    </fwb-accordion-content>
+                                </fwb-accordion-panel>
+                                <fwb-accordion-panel>
+                                    <fwb-accordion-header>SHIPPING AND RETURNS</fwb-accordion-header>
+                                    <fwb-accordion-content>
+                                        <div>
+                                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                                Flowbite is first conceptualized and designed using the Figma software
+                                                so everything you see in
+                                                the library has a design equivalent in our Figma file.
+                                            </p>
+                                            <p class="text-gray-500 dark:text-gray-400">
+                                                Check out the <a href="https://flowbite.com/figma/"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Figma
+                                                    design system</a> based on
+                                                the utility classes from Tailwind CSS and components from Flowbite.
+                                            </p>
+                                        </div>
+                                    </fwb-accordion-content>
+                                </fwb-accordion-panel>
+                            </fwb-accordion>
 
-                            <div id="accordionFlushExample">
-                                <div
-                                    class="rounded-none border border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                                    <h2 class="mb-0" id="flush-headingOne">
-                                        <button
-                                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                                            type="button" data-twe-collapse-init data-twe-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Accordion Item #1
-                                            <span
-                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="!visible border-0" data-twe-collapse-item
-                                        data-twe-collapse-show aria-labelledby="flush-headingOne"
-                                        data-twe-parent="#accordionFlushExample">
-                                        <div class="px-5 py-4">
-                                            Placeholder content for this accordion, which is intended to
-                                            demonstrate the
-                                            <code>.accordion-flush</code> class. This is the first item's
-                                            accordion body.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-none border border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                                    <h2 class="mb-0" id="flush-headingTwo">
-                                        <button
-                                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                                            type="button" data-twe-collapse-init data-twe-collapse-collapsed
-                                            data-twe-target="#flush-collapseTwo" aria-expanded="false"
-                                            aria-controls="flush-collapseTwo">
-                                            Accordion Item #2
-                                            <span
-                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="!visible hidden border-0" data-twe-collapse-item
-                                        aria-labelledby="flush-headingTwo" data-twe-parent="#accordionFlushExample">
-                                        <div class="px-5 py-4">
-                                            Placeholder content for this accordion, which is intended to
-                                            demonstrate the
-                                            <code>.accordion-flush</code> class. This is the second item's
-                                            accordion body. Let's imagine this being filled with some actual
-                                            content.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-none border border-b-0 border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                                    <h2 class="mb-0" id="flush-headingThree">
-                                        <button
-                                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                                            type="button" data-twe-collapse-init data-twe-collapse-collapsed
-                                            data-twe-target="#flush-collapseThree" aria-expanded="false"
-                                            aria-controls="flush-collapseThree">
-                                            Accordion Item #3
-                                            <span
-                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="!visible hidden" data-twe-collapse-item
-                                        aria-labelledby="flush-headingThree" data-twe-parent="#accordionFlushExample">
-                                        <div class="px-5 py-4">
-                                            Placeholder content for this accordion, which is intended to
-                                            demonstrate the
-                                            <code>.accordion-flush</code> class. This is the third item's
-                                            accordion body. Nothing more exciting happening here in terms of
-                                            content, but just filling up the space to make it look, at least
-                                            at first glance, a bit more representative of how this would look
-                                            in a real-world application.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -323,7 +311,65 @@
 
             </div>
         </div>
-    </div>
-</template>
 
+        <!------ Product Modal --------->
+        <fwb-modal v-if="isShowModal" @close="closeModal">
+            <template #body>
+                <div class="h-[600px]">
+                    <img src="../assets/images/productImg.jpg" class="w-full h-full" alt="" />
+                </div>
+
+                <div class=" w-full mt-3">
+
+                    <ul class="flex flex-wrap justify-start gap-3 items-start mt-3">
+                        <li class="product_list">
+                            <div class="w-[100px] border  h-[100px] border-dark-text rounded-md py-2 px-3">
+                                <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                                    alt="Prd-Image" />
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                    alt="Prd-Image" />
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                    alt="Prd-Image" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </template>
+        </fwb-modal>
+    </div>
+
+
+
+</template>
+<script setup lang="ts">
+import {
+    FwbAccordion,
+    FwbAccordionContent,
+    FwbAccordionHeader,
+    FwbAccordionPanel,
+} from 'flowbite-vue'
+
+import { ref } from 'vue'
+import { FwbButton, FwbModal } from 'flowbite-vue';
+
+const isShowModal = ref(false);
+
+function closeModal() {
+    isShowModal.value = false;
+}
+function showModal() {
+    isShowModal.value = true;
+}
+</script>
 <style scoped></style>
