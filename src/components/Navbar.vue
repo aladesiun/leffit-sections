@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<nav class="bg-white border-b border-pink-200">
+<nav class="bg-white border w-[1250px] mx-auto">
   <div class="container mx-auto flex items-center justify-between py-4">
     <!-- Logo -->
     <div class="flex items-center space-x-4">
