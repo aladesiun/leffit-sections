@@ -2,16 +2,18 @@
 </script>
 
 <template>
-    <nav class="bg-white mx-auto">
-        <div class="w-[1250px] mx-auto">
+    <nav class="bg-white mx-auto w-full">
+        <div class="mx-auto">
+
+
             <div class="container mx-auto flex items-center justify-between py-4 border-b-4 border-b-[#ffcad4]">
+
                 <!-- Logo -->
                 <div class="flex items-center space-x-4">
                     <a href="#" class="text-black text-2xl font-bold">
                         PANDORA
                     </a>
                 </div>
-
 
                 <!-- Search and Icons -->
                 <div class="flex items-center space-x-4">
@@ -65,8 +67,8 @@
                         </button>
                     </div>
                 </div>
-            </div>
 
+            </div>
 
 
             <!-- Navigation Menu -->
