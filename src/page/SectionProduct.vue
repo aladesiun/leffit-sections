@@ -42,10 +42,48 @@
 
             </ul>
 
-            <div class="flex justify-between items-start w-full gap-8">
-                <div class="w-full h-[600px] border"></div>
+            <div class="flex md:flex-row flex-col justify-between items-start w-full gap-8">
 
-                <div id="product-details" class="w-[780px] border ">
+                <div id="ProductImage" class="w-full h-auto">
+
+                    <div class="w-full md:h-[600px] sm:h-[400px] h-[300px] border border-red-500 product_wrap">
+                        <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                            alt="Prd-Image" />
+                    </div>
+
+                    <div class=" w-full mt-3">
+
+                        <ul class="flex flex-wrap justify-start gap-3 items-start">
+
+                            <li>
+                                <div class="w-[100px] border  h-[100px] border-dark-text rounded-md py-2 px-3">
+                                    <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                                        alt="Prd-Image" />
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                    <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                        alt="Prd-Image" />
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                    <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                        alt="Prd-Image" />
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                
+                <div id="product-details" class="w-[780px] product_details border ">
 
                     <p class=" text-dark-text text-[28px] font-bold mb-3">
                         Double heart sparkling ring
@@ -206,7 +244,7 @@
 
 
                                 <p class="text-dark-text text-xs font-medium">
-                                  Gift wrapping
+                                    Gift wrapping
                                 </p>
                             </div>
                         </div>
@@ -321,6 +359,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>

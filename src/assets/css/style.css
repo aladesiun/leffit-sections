@@ -17,6 +17,12 @@ body {
     align-items: center;
 }
 
+@media only screen and (max-width: 1280px) {
+    .product_wrap{
+      width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1220px) {
   .cartLayout {
     display: block;
@@ -26,5 +32,11 @@ body {
   }
   .cartLayout {
     width: 98%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product_details{
+    width: 100%;
   }
 }
