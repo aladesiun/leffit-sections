@@ -61,7 +61,6 @@ const toggleNewInSidebar = () => {
 <template>
 
     <nav class="w-full">
-        
         <div class="border-b-4 border-b-[#ffcad4]">
             <!----------Desktop-NAV------------>
             <div class="max_width mx-auto lg:flex hidden items-center justify-between py-4 ">
@@ -436,16 +435,17 @@ const toggleNewInSidebar = () => {
     cursor: pointer;
 }
 
-
-
 /* Hide the sidebar by default */
-.hidden {
-  display: none;
+.sidebarHidden {
+    display: none; 
+}
+
+.sidebarNewIn{
+    display: none;
 }
 
 .sidebar {
-  display: block;
-  left: ;
-  /* Ensure sidebar block display when not hidden */
+    display: block;
+    /* Ensure sidebar block display when not hidden */
 }
 </style>
