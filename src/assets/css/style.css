@@ -38,7 +38,6 @@ body {
     border: none!important;
     outline: none!important;
 }
-
 .product_list button{
   background-color: transparent!important;
   padding: 0px!important;
@@ -48,6 +47,10 @@ body {
 }
 .site_search{
   padding: .8rem 2rem .8rem 1.3rem;
+}
+
+.arrow_nav svg{
+    transform: rotate(180deg);
 }
 
 
