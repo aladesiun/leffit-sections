@@ -1,48 +1,6 @@
-
-
 <template>
-<fwb-accordion>
-    <fwb-accordion-panel>
-      <fwb-accordion-header>header</fwb-accordion-header>
-      <fwb-accordion-content>
-        <div>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.
-          </p>
-          <p class="text-gray-500 dark:text-gray-400">
-            Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.
-          </p>
-        </div>
-      </fwb-accordion-content>
-    </fwb-accordion-panel>
-    <fwb-accordion-panel>
-      <fwb-accordion-header>another header</fwb-accordion-header>
-      <fwb-accordion-content>
-        <div>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.
-          </p>
-          <p class="text-gray-500 dark:text-gray-400">
-            Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline" >Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.
-          </p>
-        </div>
-      </fwb-accordion-content>
-    </fwb-accordion-panel>
-    <fwb-accordion-panel>
-      <fwb-accordion-header>and one more header</fwb-accordion-header>
-      <fwb-accordion-content>
-        <div>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.
-          </p>
-          <p class="text-gray-500 dark:text-gray-400">
-            Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.
-          </p>
-        </div>
-      </fwb-accordion-content>
-    </fwb-accordion-panel>
-  </fwb-accordion>
-    <!-- <div class="w-[1250px] mx-auto flex gap-3 justify-between items-start mt-14 cartLayout">
+
+    <div class="w-[1250px] mx-auto flex gap-3 justify-between items-start mt-14 cartLayout">
         <div class="w-full">
             <ul class="flex gap-2">
 
@@ -57,7 +15,6 @@
                     </span>
                 </li>
 
-
                 <li class="flex justify-start items-center">
                     <p class="text-right text-dark-text text-xs">Rings</p>
 
@@ -67,7 +24,6 @@
                         </svg>
                     </span>
                 </li>
-
 
                 <li class="flex justify-start items-center">
                     <p class="text-right text-dark-text text-xs">Rings</p>
@@ -85,20 +41,23 @@
 
                 <div id="ProductImage" class="w-full h-auto">
 
-                    <div class="w-full md:h-[600px] sm:h-[400px] h-[300px] border border-red-500 product_wrap">
+                    <div class="w-full md:h-[600px] sm:h-[400px] h-[300px] product_wrap">
                         <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
                             alt="Prd-Image" />
                     </div>
 
                     <div class=" w-full mt-3">
-
                         <ul class="flex flex-wrap justify-start gap-3 items-start">
+                            <li class="product_list">
 
-                            <li>
-                                <div class="w-[100px] border  h-[100px] border-dark-text rounded-md py-2 px-3">
-                                    <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
-                                        alt="Prd-Image" />
-                                </div>
+                                <fwb-button @click="showModal">
+                                    <div class="w-[100px] border  h-[100px] border-dark-text rounded-md py-2 px-3">
+                                        <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                                            alt="Prd-Image" />
+                                    </div>
+                                </fwb-button>
+
+
                             </li>
 
                             <li>
@@ -114,17 +73,14 @@
                                         alt="Prd-Image" />
                                 </div>
                             </li>
-
                         </ul>
 
                     </div>
-
                 </div>
 
-                
-                <div id="product-details" class="w-[780px] product_details border ">
+                <div id="product-details" class="w-[780px] product_details">
 
-                    <p class=" text-dark-text text-[28px] font-bold mb-3">
+                    <p class=" text-dark-text md:text-[28px] text-xl font-bold mb-3">
                         Double heart sparkling ring
                     </p>
 
@@ -208,33 +164,34 @@
 
                         <div class=" grid grid-cols-6 gap-3 w-[95%] mt-2.5">
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-darkText">
+                            <div
+                                class="border w-[62px] h-[45px] flex_center text-xs hover:bg-darkText hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
-                            <div class="border w-[62px] h-[45px] flex_center text-xs">
+                            <div class="border w-[62px] h-[45px] flex_center text-xs hover:bg-dark-bg hover:text-white">
                                 24
                             </div>
 
@@ -255,6 +212,7 @@
 
 
                         <div class="flex gap-5">
+
                             <div class="flex justify-start items-center  mt-8">
                                 <span class="mr-3">
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
@@ -272,6 +230,7 @@
                             </div>
 
                             <div class="flex justify-start items-center mt-8">
+
                                 <span>
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -281,117 +240,69 @@
                                     </svg>
                                 </span>
 
-
                                 <p class="text-dark-text text-xs font-medium">
                                     Gift wrapping
                                 </p>
                             </div>
+
                         </div>
 
 
+                        <div id="Accordion" class="mt-12 accordion_wrap">
+                            <fwb-accordion>
+                                <fwb-accordion-panel>
+                                    <fwb-accordion-header>PRODUCT DETAILS</fwb-accordion-header>
+                                    <fwb-accordion-content>
+                                        <div>
+                                            <p class="mb-2 text-[#71706c]">
+                                                The Double Heart Sparkling Ring features two heart-shaped
+                                                clear cubic zirconia set at different angles to symbolize
+                                                the love between a mother and her child. The ring band is
+                                                accented with a half row of pavé and is attached asymmetrically
+                                                to the two hearts for a more modern look. A gift that celebrates
+                                                all that your mother has done for you.
+                                            </p>
+                                        </div>
+                                    </fwb-accordion-content>
+                                </fwb-accordion-panel>
 
-                        <div id="Accordion">
-
-                            <div id="accordionExample">
-                                <div
-                                    class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                                    <h2 class="mb-0" id="headingOne">
-                                        <button
-                                            class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                                            type="button" data-twe-collapse-init data-twe-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            Accordion Item #1
-                                            <span
-                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="!visible" data-twe-collapse-item data-twe-collapse-show
-                                        aria-labelledby="headingOne" data-twe-parent="#accordionExample">
-                                        <div class="px-5 py-4">
-                                            <strong>This is the first item's accordion body.</strong> It is
-                                            shown by default, until the collapse plugin adds the appropriate
-                                            classes that we use to style each element. These classes control
-                                            the overall appearance, as well as the showing and hiding via CSS
-                                            transitions. You can modify any of this with custom CSS or
-                                            overriding our default variables. It's also worth noting that just
-                                            about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
+                                <fwb-accordion-panel>
+                                    <fwb-accordion-header>SIZE ADVICE</fwb-accordion-header>
+                                    <fwb-accordion-content>
+                                        <div>
+                                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                                Use the dropdown menus below to find your circumference or diameter.
+                                                Then use the list to see which ring size fits your measurement result,
+                                                to find your ideal size.
+                                            </p>
+                                            <p class="text-gray-500 dark:text-gray-400">
+                                                Check out the <a href="https://flowbite.com/figma/"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Figma
+                                                    design system</a> based on
+                                                the utility classes from Tailwind CSS and components from Flowbite.
+                                            </p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                                    <h2 class="mb-0" id="headingTwo">
-                                        <button
-                                            class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                                            type="button" data-twe-collapse-init data-twe-collapse-collapsed
-                                            data-twe-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Accordion Item #2
-                                            <span
-                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="!visible hidden" data-twe-collapse-item
-                                        aria-labelledby="headingTwo" data-twe-parent="#accordionExample">
-                                        <div class="px-5 py-4">
-                                            <strong>This is the second item's accordion body.</strong> It is
-                                            hidden by default, until the collapse plugin adds the appropriate
-                                            classes that we use to style each element. These classes control
-                                            the overall appearance, as well as the showing and hiding via CSS
-                                            transitions. You can modify any of this with custom CSS or
-                                            overriding our default variables. It's also worth noting that just
-                                            about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
+                                    </fwb-accordion-content>
+                                </fwb-accordion-panel>
+                                <fwb-accordion-panel>
+                                    <fwb-accordion-header>SHIPPING AND RETURNS</fwb-accordion-header>
+                                    <fwb-accordion-content>
+                                        <div>
+                                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                                Flowbite is first conceptualized and designed using the Figma software
+                                                so everything you see in
+                                                the library has a design equivalent in our Figma file.
+                                            </p>
+                                            <p class="text-gray-500 dark:text-gray-400">
+                                                Check out the <a href="https://flowbite.com/figma/"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Figma
+                                                    design system</a> based on
+                                                the utility classes from Tailwind CSS and components from Flowbite.
+                                            </p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                                    <h2 class="accordion-header mb-0" id="headingThree">
-                                        <button
-                                            class="data-[twe-collapse-collapsed] group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary  dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-                                            type="button" data-twe-collapse-init data-twe-collapse-collapsed
-                                            data-twe-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Accordion Item #3
-                                            <span
-                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                </svg>
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="!visible hidden" data-twe-collapse-item
-                                        aria-labelledby="headingThree" data-twe-parent="#accordionExample">
-                                        <div class="px-5 py-4">
-                                            <strong>This is the third item's accordion body.</strong> It is
-                                            hidden by default, until the collapse plugin adds the appropriate
-                                            classes that we use to style each element. These classes control
-                                            the overall appearance, as well as the showing and hiding via CSS
-                                            transitions. You can modify any of this with custom CSS or
-                                            overriding our default variables. It's also worth noting that just
-                                            about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    </fwb-accordion-content>
+                                </fwb-accordion-panel>
+                            </fwb-accordion>
 
                         </div>
 
@@ -401,14 +312,38 @@
 
             </div>
         </div>
-    </div> -->
+
+        <!------ Product Modal --------->
+        <fwb-modal v-if="isShowModal" @close="closeModal">
+            <template #body>
+                <div class="h-[600px]">
+                    <img src="../assets/images/productImg.jpg" class="w-full h-full" alt="" />
+                </div>
+            </template>
+        </fwb-modal>
+    </div>
+
+
+
 </template>
 <script setup lang="ts">
 import {
-  FwbAccordion,
-  FwbAccordionContent,
-  FwbAccordionHeader,
-  FwbAccordionPanel,
+    FwbAccordion,
+    FwbAccordionContent,
+    FwbAccordionHeader,
+    FwbAccordionPanel,
 } from 'flowbite-vue'
+
+import { ref } from 'vue'
+import { FwbButton, FwbModal } from 'flowbite-vue';
+
+const isShowModal = ref(false);
+
+function closeModal() {
+    isShowModal.value = false;
+}
+function showModal() {
+    isShowModal.value = true;
+}
 </script>
 <style scoped></style>
