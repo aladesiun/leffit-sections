@@ -305,23 +305,23 @@ const toggleNewInSidebar = () => {
             </div>
 
             <!-- Dropdown content -->
-            <div v-if="showNewIn" id="NewIN" class="w-full absolute h-[400px] top-11 border bg-white"
+            <div v-if="showNewIn" id="NewIN" class="w-full absolute h-[400px] top-11 border bg-white z-40"
                 @mouseenter="showDropdownNewIn" @mouseleave="hideDropdownNewIn">
                 New in
             </div>
 
             <div v-if="showCharmsAndBracelets" id="showCharmsAndBracelets"
-                class="w-full absolute h-[400px] top-11 border bg-white" @mouseenter="showDropdownCharmsAndBracelets"
+                class="w-full absolute h-[400px] top-11 border bg-white z-40" @mouseenter="showDropdownCharmsAndBracelets"
                 @mouseleave="hideDropdownCharmsAndBracelets">
                 Charms and bracelets
             </div>
 
-            <div v-if="showRings" id="showRings" class="w-full absolute h-[400px] top-11 border bg-white"
+            <div v-if="showRings" id="showRings" class="w-full absolute h-[400px] top-11 border bg-white z-40"
                 @mouseenter="showDropdownRings" @mouseleave="hideDropdownRings">
                 Rings
             </div>
 
-            <div v-if="showChains" id="showCharmsAndBracelets" class="w-full absolute h-[400px] top-11 border bg-white"
+            <div v-if="showChains" id="showCharmsAndBracelets" class="w-full absolute h-[400px] top-11 border bg-white z-40"
                 @mouseenter="showDropdownChains" @mouseleave="hideDropdownChains">
                 Chains
             </div>
