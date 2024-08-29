@@ -21,6 +21,11 @@ body {
   justify-content: start;
   align-items: center;
 }
+.flex_between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .accordion_wrap button {
   border-radius: 0px !important;
   border: none;
