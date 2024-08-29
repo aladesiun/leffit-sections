@@ -3,6 +3,9 @@ import Navbar from './components/Navbar.vue';
 import SectionProduct from './page/SectionProduct.vue';
 import Cart from './page/Cart.vue';
 import Footer from './components/Footer.vue';
+//in your `main.js` file
+import '../node_modules/flowbite-vue/dist/index.css'
+/* or in your `app.css` file */
 </script>
 
 <template>
