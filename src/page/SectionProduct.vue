@@ -48,6 +48,7 @@
 
                     <div class=" w-full mt-3">
                         <ul class="flex flex-wrap justify-start gap-3 items-start">
+
                             <li class="product_list">
 
                                 <fwb-button @click="showModal">
@@ -56,7 +57,6 @@
                                             alt="Prd-Image" />
                                     </div>
                                 </fwb-button>
-
 
                             </li>
 
@@ -74,7 +74,6 @@
                                 </div>
                             </li>
                         </ul>
-
                     </div>
                 </div>
 
@@ -162,7 +161,7 @@
                             </p>
                         </div>
 
-                        <div class=" grid grid-cols-6 gap-3 w-[95%] mt-2.5">
+                        <div class=" grid md:grid-cols-6 sm:grid-cols-4 grid-cols-3 gap-3 w-[95%] mt-2.5">
 
                             <div
                                 class="border w-[62px] h-[45px] flex_center text-xs hover:bg-darkText hover:bg-dark-bg hover:text-white">
@@ -214,7 +213,7 @@
                         <div class="flex gap-5">
 
                             <div class="flex justify-start items-center  mt-8">
-                                <span class="mr-3">
+                                <span class="mr-2">
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -231,7 +230,7 @@
 
                             <div class="flex justify-start items-center mt-8">
 
-                                <span>
+                                <span class="mr-2">
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -318,6 +317,33 @@
             <template #body>
                 <div class="h-[600px]">
                     <img src="../assets/images/productImg.jpg" class="w-full h-full" alt="" />
+                </div>
+
+                <div class=" w-full mt-3">
+
+                    <ul class="flex flex-wrap justify-start gap-3 items-start mt-3">
+                        <li class="product_list">
+                            <div class="w-[100px] border  h-[100px] border-dark-text rounded-md py-2 px-3">
+                                <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
+                                    alt="Prd-Image" />
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                    alt="Prd-Image" />
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="w-[100px] border  h-[100px] border-[#d0d1d2] rounded-md py-2 px-3">
+                                <img src="../assets/images/productTwo.jpg" class="h-full w-full object-contain"
+                                    alt="Prd-Image" />
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </template>
         </fwb-modal>
