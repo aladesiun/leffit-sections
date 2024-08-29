@@ -6,7 +6,6 @@ const showRings = ref(false);
 const showChains = ref(false);
 const showEarrings = ref(false);
 
-
 const showDropdownNewIn = () => {
     showNewIn.value = true;
 };
@@ -17,7 +16,6 @@ const hideDropdownNewIn = () => {
 const showDropdownCharmsAndBracelets = () => {
     showCharmsAndBracelets.value = true;
 };
-
 const hideDropdownCharmsAndBracelets = () => {
     showCharmsAndBracelets.value = false;
 };
@@ -25,14 +23,13 @@ const hideDropdownCharmsAndBracelets = () => {
 const showDropdownRings = () => {
     showRings.value = true;
 };
-
 const showDropdownChains = () => {
     showChains.value = true;
 };
+
 const hideDropdownChains = () => {
     showChains.value = false;
 };
-
 const hideDropdownRings = () => {
     showRings.value = false;
 };
@@ -40,33 +37,17 @@ const hideDropdownRings = () => {
 const showDropdownEarrings = () => {
     showEarrings.value = true;
 };
-
 const hideDropdownEarrings = () => {
     showEarrings.value = false;
-};
-
-
-
-
-
-
-
-
-
-
-
-const hideDropdown = () => {
-    showNewIn.value = false;
 };
 </script>
 
 <template>
     <nav class="w-full">
-
         <div class="border-b-4 border-b-[#ffcad4]">
-            <div class="w-[1250px] mx-auto flex items-center justify-between py-4 ">
 
-
+            <!----------Desktop-NAV------------>
+            <div class="max_width mx-auto lg:flex hidden items-center justify-between py-4 ">
                 <div class="flex items-center space-x-4">
                     <a href="#" class="text-black text-3xl font-semibold">
                         PANDORA
@@ -88,7 +69,7 @@ const hideDropdown = () => {
 
                     <div class="flex space-x-6">
 
-                        <button>
+                        <button id="favourites">
                             <svg width="22" height="20" viewBox="0 0 16 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -98,7 +79,7 @@ const hideDropdown = () => {
 
                         </button>
 
-                        <button>
+                        <button id="location">
                             <svg width="20" height="26" viewBox="0 0 20 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -110,7 +91,7 @@ const hideDropdown = () => {
                             </svg>
                         </button>
 
-                        <button>
+                        <button id="profile">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -122,7 +103,7 @@ const hideDropdown = () => {
                             </svg>
                         </button>
 
-                        <button>
+                        <button id="cart">
                             <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 9V5C5 2.79 6.795 1 9 1C11.21 1 13 2.795 13 5V9M1 7H17V23H1V7Z"
@@ -131,13 +112,69 @@ const hideDropdown = () => {
                         </button>
                     </div>
                 </div>
+            </div>
 
+
+            <!--------MOBILE-NAV--------->
+            <div class="max_width mx-auto w-full flex items-center justify-between py-4 ">
+
+                <div class="flex justify-between items-center sm:w-[600px] w-[92%] mx-auto">
+
+                    <div class="flex gap-4">
+                        <span id="menu" class="cursor-pointer">
+                            <svg width="28" height="16" viewBox="0 0 28 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.666 1.25H1.33398C1.20138 1.25 1.0742 1.19732 0.980431 1.10355C0.886663 1.00979 0.833984 0.882608 0.833984 0.75C0.833984 0.617392 0.886663 0.490214 0.980431 0.396446C1.0742 0.302678 1.20138 0.25 1.33398 0.25H26.666C26.7986 0.25 26.9258 0.302678 27.0195 0.396446C27.1133 0.490214 27.166 0.617392 27.166 0.75C27.166 0.882608 27.1133 1.00979 27.0195 1.10355C26.9258 1.19732 26.7986 1.25 26.666 1.25ZM26.666 8.5H1.33398C1.20138 8.5 1.0742 8.44732 0.980431 8.35355C0.886663 8.25979 0.833984 8.13261 0.833984 8C0.833984 7.86739 0.886663 7.74021 0.980431 7.64645C1.0742 7.55268 1.20138 7.5 1.33398 7.5H26.666C26.7986 7.5 26.9258 7.55268 27.0195 7.64645C27.1133 7.74021 27.166 7.86739 27.166 8C27.166 8.13261 27.1133 8.25979 27.0195 8.35355C26.9258 8.44732 26.7986 8.5 26.666 8.5ZM26.666 15.75H1.33398C1.20138 15.75 1.0742 15.6973 0.980431 15.6036C0.886663 15.5098 0.833984 15.3826 0.833984 15.25C0.833984 15.1174 0.886663 14.9902 0.980431 14.8964C1.0742 14.8027 1.20138 14.75 1.33398 14.75H26.666C26.7986 14.75 26.9258 14.8027 27.0195 14.8964C27.1133 14.9902 27.166 15.1174 27.166 15.25C27.166 15.3826 27.1133 15.5098 27.0195 15.6036C26.9258 15.6973 26.7986 15.75 26.666 15.75Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+
+                        <span id="search">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.677 16.385L9.415 10.123C8.915 10.549 8.34 10.8787 7.69 11.112C7.04 11.3453 6.38667 11.462 5.73 11.462C4.12867 11.462 2.77333 10.9077 1.664 9.799C0.554667 8.69034 0 7.33534 0 5.734C0 4.13267 0.554 2.777 1.662 1.667C2.77 0.557002 4.12467 0.00133573 5.726 2.39808e-06C7.32733 -0.00133094 8.68333 0.553336 9.794 1.664C10.9047 2.77467 11.46 4.13034 11.46 5.731C11.46 6.42567 11.337 7.098 11.091 7.748C10.845 8.398 10.5217 8.954 10.121 9.416L16.383 15.677L15.677 16.385ZM5.731 10.461C7.05767 10.461 8.17767 10.0043 9.091 9.091C10.0043 8.17767 10.461 7.05734 10.461 5.73C10.461 4.40267 10.0043 3.28267 9.091 2.37C8.17767 1.45734 7.05767 1.00067 5.731 1C4.40433 0.999336 3.284 1.456 2.37 2.37C1.456 3.284 0.999333 4.404 1 5.73C1.00067 7.056 1.45733 8.176 2.37 9.09C3.28267 10.004 4.40267 10.4607 5.73 10.46"
+                                    fill="black" />
+                            </svg>
+                        </span>
+
+                    </div>
+
+                    <div>
+                        <a href="#" class="text-black sm:text-3xl text-lg font-semibold">
+                            PANDORA
+                        </a>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button id="profile">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.7274 20.447C19.2724 19.171 18.2674 18.044 16.8704 17.24C15.4734 16.436 13.7614 16 12.0004 16C10.2394 16 8.52744 16.436 7.13044 17.24C5.73344 18.044 4.72844 19.171 4.27344 20.447"
+                                    stroke="black" stroke-linecap="round" />
+                                <path
+                                    d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z"
+                                    stroke="black" stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+                        <button id="cart">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 9V5C5 2.79 6.795 1 9 1C11.21 1 13 2.795 13 5V9M1 7H17V23H1V7Z"
+                                    stroke="black" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>
             </div>
         </div>
 
-        <div class="w-full border-b border-b-[#d0d1d2] h-[47px] relative">
-            <div class="w-[1250px] mx-auto h-full">
-
+        <div class="w-full border-b border-b-[#d0d1d2] h-[47px] relative lg:block hidden">
+            <div class="max_width mx-auto h-full">
 
                 <div class=" flex justify-start items-center space-x-6 h-full relative">
 
@@ -249,10 +286,9 @@ const hideDropdown = () => {
                             </span>
                         </div>
                     </router-link>
-                    
+
                 </div>
             </div>
-
 
             <!-- Dropdown content -->
             <div v-if="showNewIn" id="NewIN" class="w-full absolute h-[400px] top-11 border bg-white"
@@ -278,6 +314,9 @@ const hideDropdown = () => {
 
         </div>
 
+        <div id="sidebar" class="w-[90%] h-[100vh] border bg-white lg:hidden block">
+
+        </div>
     </nav>
 
 </template>
