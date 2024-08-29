@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { ref } from 'vue';
 const showNewIn = ref(false);
 const showCharmsAndBracelets = ref(false);
@@ -40,6 +41,20 @@ const showDropdownEarrings = () => {
 const hideDropdownEarrings = () => {
     showEarrings.value = false;
 };
+
+
+// State to track sidebar visibility
+const isSidebarVisible = ref(false);
+
+// Function to toggle the sidebar
+const toggleSidebar = () => {
+  isSidebarVisible.value = !isSidebarVisible.value;
+};
+
+
+
+
+
 </script>
 
 <template>
@@ -116,12 +131,11 @@ const hideDropdownEarrings = () => {
 
 
             <!--------MOBILE-NAV--------->
-            <div class="max_width mx-auto w-full flex items-center justify-between py-4 ">
-
+            <div class="max_width mx-auto w-full flex items-center justify-between py-4 lg:hidden block">
                 <div class="flex justify-between items-center sm:w-[600px] w-[92%] mx-auto">
 
                     <div class="flex gap-4">
-                        <span id="menu" class="cursor-pointer">
+                        <span id="menu" @click="toggleSidebar" class="cursor-pointer">
                             <svg width="28" height="16" viewBox="0 0 28 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -138,7 +152,6 @@ const hideDropdownEarrings = () => {
                                     fill="black" />
                             </svg>
                         </span>
-
                     </div>
 
                     <div>
@@ -168,12 +181,13 @@ const hideDropdownEarrings = () => {
                             </svg>
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w-full border-b border-b-[#d0d1d2] h-[47px] relative lg:block hidden">
+
             <div class="max_width mx-auto h-full">
 
                 <div class=" flex justify-start items-center space-x-6 h-full relative">
@@ -313,12 +327,91 @@ const hideDropdownEarrings = () => {
             </div>
 
         </div>
-
-        <div id="sidebar" class="w-[90%] h-[100vh] border bg-white lg:hidden block">
-
-        </div>
     </nav>
+
+    <!--------Sidebar ------------>
+    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0 left-[1]', { hidden: !isSidebarVisible }]">
+        <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
+            <div class="flex_start gap-4 cursor-pointer"
+            @click="toggleSidebar"
+            >
+                Close
+                <span>
+                    <svg width="23" height="23" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 17.625L17.625 1M17.625 17.625L1 1" stroke="black" stroke-width="0.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <div> 
+            <ul class="px-2">
+
+                <li class="flex_between py-5 border-b border-b-[#d0d1d2] px-5 cursor-pointer">
+                    <p>NEW IN</p>
+                    <span>
+                        <svg width="11" height="18" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </li>
+
+                <li class="flex_between py-5 border-b border-b-[#d0d1d2] px-5 cursor-pointer">
+                    <p>CHARMS AND BRACELETS</p>
+                    <span>
+                        <svg width="11" height="18" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </li>
+
+                <li class="flex_between py-5 border-b border-b-[#d0d1d2] px-5 cursor-pointer">
+                    <p>RINGS</p>
+                    <span>
+                        <svg width="11" height="18" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </li>
+
+                <li class="flex_between py-5 border-b border-b-[#d0d1d2] px-5">
+                    <p>CHAINS</p>
+                    <span>
+                        <svg width="11" height="18" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
 
 </template>
 
-<style scoped></style>
+<style scoped>
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    left: -100%;
+    transition: left .5s cubic-bezier(0, 1, 0.5, 1);
+}
+/* Initial styles */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Hide the sidebar by default */
+.hidden {
+  display: none;
+}
+
+.sidebar {
+  display: block;
+  left: ;
+  /* Ensure sidebar block display when not hidden */
+}
+</style>
