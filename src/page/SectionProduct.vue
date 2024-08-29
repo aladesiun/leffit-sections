@@ -179,7 +179,7 @@
 
                         <div class="flex gap-5">
                             <div class="flex justify-start items-center  mt-8">
-                                <span class="mr-4">
+                                <span class="mr-3">
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -206,7 +206,7 @@
 
 
                                 <p class="text-dark-text text-xs font-medium">
-                                    Opslaan op verlanglijst
+                                  Gift wrapping
                                 </p>
                             </div>
                         </div>
