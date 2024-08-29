@@ -330,7 +330,7 @@ const toggleNewInSidebar = () => {
     </nav>
 
     <!--------Sidebar ------------>
-    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0', { sidebarHidden: !isSidebarVisible }]">
+    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0 z-40', { sidebarHidden: !isSidebarVisible }]">
         <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
             <div class="flex_start gap-4 cursor-pointer" @click="toggleSidebar">
                 Close
