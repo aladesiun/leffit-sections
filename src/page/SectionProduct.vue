@@ -51,8 +51,6 @@
 
 
 
-
-
                 <div id="product-details" class="w-[780px] border h-[500px]">
 
                     <p class=" text-dark-text text-[28px] font-bold mb-3">
@@ -127,10 +125,7 @@
                         </div>
                     </div>
 
-
                     <div>
-
-
                         <div class="flex justify-between items-start mt-4">
                             <p class="text-dark-text text-xs font-normal">
                                 Select Size
@@ -186,6 +181,140 @@
                                 class="w-full h-[47px] ase-in-out duration-150 tracking-widest text-sm border-transparent text-white bg-dark-border border font-normal hover:bg-[#ffcad4]">
                                 IN THE SHOPPING CART
                             </button>
+                        </div>
+
+
+                        <div class="flex gap-5">
+                            <div class="flex justify-start items-center  mt-8">
+                                <span class="mr-4">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.77778 0C7.58667 0 6.56 0.553804 6 1.4712C5.44 0.553804 4.41333 0 3.22222 0C2.36795 0.00100678 1.54896 0.333433 0.944904 0.924362C0.340843 1.51529 0.00102915 2.31647 0 3.15217C0 4.70598 1 6.32989 2.96667 7.97771C3.87477 8.73359 4.85522 9.40208 5.89444 9.97391C5.92687 9.99103 5.96315 10 6 10C6.03685 10 6.07313 9.99103 6.10556 9.97391C7.14478 9.40208 8.12524 8.73359 9.03333 7.97771C11 6.32989 12 4.70598 12 3.15217C11.999 2.31647 11.6592 1.51529 11.0551 0.924362C10.451 0.333433 9.63205 0.00100678 8.77778 0ZM6 9.53369C5.22222 9.09891 0.444444 6.30815 0.444444 3.15217C0.445327 2.43174 0.738268 1.74106 1.25901 1.23164C1.77975 0.722218 2.48578 0.435645 3.22222 0.434782C4.395 0.434782 5.38056 1.04946 5.79444 2.03859C5.81119 2.07846 5.83967 2.11256 5.87627 2.13656C5.91287 2.16056 5.95594 2.17338 6 2.17338C6.04406 2.17338 6.08713 2.16056 6.12373 2.13656C6.16033 2.11256 6.18881 2.07846 6.20556 2.03859C6.61944 1.04946 7.605 0.434782 8.77778 0.434782C9.51422 0.435645 10.2202 0.722218 10.741 1.23164C11.2617 1.74106 11.5547 2.43174 11.5556 3.15217C11.5556 6.30435 6.77778 9.10108 6 9.53369Z"
+                                            fill="black" />
+                                    </svg>
+                                </span>
+
+
+                                <p class="text-dark-text text-xs font-medium">
+                                    Opslaan op verlanglijst
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center mt-8">
+                                <span>
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.77778 0C7.58667 0 6.56 0.553804 6 1.4712C5.44 0.553804 4.41333 0 3.22222 0C2.36795 0.00100678 1.54896 0.333433 0.944904 0.924362C0.340843 1.51529 0.00102915 2.31647 0 3.15217C0 4.70598 1 6.32989 2.96667 7.97771C3.87477 8.73359 4.85522 9.40208 5.89444 9.97391C5.92687 9.99103 5.96315 10 6 10C6.03685 10 6.07313 9.99103 6.10556 9.97391C7.14478 9.40208 8.12524 8.73359 9.03333 7.97771C11 6.32989 12 4.70598 12 3.15217C11.999 2.31647 11.6592 1.51529 11.0551 0.924362C10.451 0.333433 9.63205 0.00100678 8.77778 0ZM6 9.53369C5.22222 9.09891 0.444444 6.30815 0.444444 3.15217C0.445327 2.43174 0.738268 1.74106 1.25901 1.23164C1.77975 0.722218 2.48578 0.435645 3.22222 0.434782C4.395 0.434782 5.38056 1.04946 5.79444 2.03859C5.81119 2.07846 5.83967 2.11256 5.87627 2.13656C5.91287 2.16056 5.95594 2.17338 6 2.17338C6.04406 2.17338 6.08713 2.16056 6.12373 2.13656C6.16033 2.11256 6.18881 2.07846 6.20556 2.03859C6.61944 1.04946 7.605 0.434782 8.77778 0.434782C9.51422 0.435645 10.2202 0.722218 10.741 1.23164C11.2617 1.74106 11.5547 2.43174 11.5556 3.15217C11.5556 6.30435 6.77778 9.10108 6 9.53369Z"
+                                            fill="black" />
+                                    </svg>
+                                </span>
+
+
+                                <p class="text-dark-text text-xs font-medium">
+                                    Opslaan op verlanglijst
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div id="Accordion">
+
+                            <div id="accordionFlushExample">
+                                <div
+                                    class="rounded-none border border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                                    <h2 class="mb-0" id="flush-headingOne">
+                                        <button
+                                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                            type="button" data-twe-collapse-init data-twe-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Accordion Item #1
+                                            <span
+                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="!visible border-0" data-twe-collapse-item
+                                        data-twe-collapse-show aria-labelledby="flush-headingOne"
+                                        data-twe-parent="#accordionFlushExample">
+                                        <div class="px-5 py-4">
+                                            Placeholder content for this accordion, which is intended to
+                                            demonstrate the
+                                            <code>.accordion-flush</code> class. This is the first item's
+                                            accordion body.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="rounded-none border border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                                    <h2 class="mb-0" id="flush-headingTwo">
+                                        <button
+                                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                            type="button" data-twe-collapse-init data-twe-collapse-collapsed
+                                            data-twe-target="#flush-collapseTwo" aria-expanded="false"
+                                            aria-controls="flush-collapseTwo">
+                                            Accordion Item #2
+                                            <span
+                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="!visible hidden border-0" data-twe-collapse-item
+                                        aria-labelledby="flush-headingTwo" data-twe-parent="#accordionFlushExample">
+                                        <div class="px-5 py-4">
+                                            Placeholder content for this accordion, which is intended to
+                                            demonstrate the
+                                            <code>.accordion-flush</code> class. This is the second item's
+                                            accordion body. Let's imagine this being filled with some actual
+                                            content.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="rounded-none border border-b-0 border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                                    <h2 class="mb-0" id="flush-headingThree">
+                                        <button
+                                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                            type="button" data-twe-collapse-init data-twe-collapse-collapsed
+                                            data-twe-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree">
+                                            Accordion Item #3
+                                            <span
+                                                class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="!visible hidden" data-twe-collapse-item
+                                        aria-labelledby="flush-headingThree" data-twe-parent="#accordionFlushExample">
+                                        <div class="px-5 py-4">
+                                            Placeholder content for this accordion, which is intended to
+                                            demonstrate the
+                                            <code>.accordion-flush</code> class. This is the third item's
+                                            accordion body. Nothing more exciting happening here in terms of
+                                            content, but just filling up the space to make it look, at least
+                                            at first glance, a bit more representative of how this would look
+                                            in a real-world application.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
