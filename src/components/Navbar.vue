@@ -1,4 +1,63 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+const showNewIn = ref(false);
+const showCharmsAndBracelets = ref(false);
+const showRings = ref(false);
+const showChains = ref(false);
+const showEarrings = ref(false);
+
+
+const showDropdownNewIn = () => {
+    showNewIn.value = true;
+};
+const hideDropdownNewIn = () => {
+    showNewIn.value = false;
+};
+
+const showDropdownCharmsAndBracelets = () => {
+    showCharmsAndBracelets.value = true;
+};
+
+const hideDropdownCharmsAndBracelets = () => {
+    showCharmsAndBracelets.value = false;
+};
+
+const showDropdownRings = () => {
+    showRings.value = true;
+};
+
+const showDropdownChains = () => {
+    showChains.value = true;
+};
+const hideDropdownChains = () => {
+    showChains.value = false;
+};
+
+const hideDropdownRings = () => {
+    showRings.value = false;
+};
+
+const showDropdownEarrings = () => {
+    showEarrings.value = true;
+};
+
+const hideDropdownEarrings = () => {
+    showEarrings.value = false;
+};
+
+
+
+
+
+
+
+
+
+
+
+const hideDropdown = () => {
+    showNewIn.value = false;
+};
 </script>
 
 <template>
@@ -76,10 +135,13 @@
             </div>
         </div>
 
-        <div class="w-full border-b border-b-[#d0d1d2] h-[47px]">
+        <div class="w-full border-b border-b-[#d0d1d2] h-[47px] relative">
             <div class="w-[1250px] mx-auto h-full">
-                <div class=" flex justify-start items-center space-x-6 h-full">
-                    <router-link to="/"
+
+
+                <div class=" flex justify-start items-center space-x-6 h-full relative">
+
+                    <router-link to="/" @mouseenter="showDropdownNewIn" @mouseleave="hideDropdownNewIn"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             NEW IN
@@ -92,7 +154,8 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownCharmsAndBracelets"
+                        @mouseleave="hideDropdownCharmsAndBracelets"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             CHARMS & BRACELETS
@@ -105,7 +168,7 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownRings" @mouseleave="hideDropdownRings"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             RINGS
@@ -118,7 +181,7 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownChains" @mouseleave="hideDropdownChains"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             CHAINS
@@ -131,7 +194,7 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownEarrings" @mouseleave="hideDropdownEarrings"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             EARRINGS
@@ -144,7 +207,8 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownCharmsAndBracelets"
+                        @mouseleave="hideDropdownCharmsAndBracelets"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             COLLECTIONS
@@ -157,7 +221,8 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownCharmsAndBracelets"
+                        @mouseleave="hideDropdownCharmsAndBracelets"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             GIFTS
@@ -170,7 +235,8 @@
                             </span>
                         </div>
                     </router-link>
-                    <router-link to="/"
+                    <router-link to="/" @mouseenter="showDropdownCharmsAndBracelets"
+                        @mouseleave="hideDropdownCharmsAndBracelets"
                         class="text-gray-800 hover:text-black text-xs cursor-pointer h-full flex_center hover:border-b-4 hover:border-b-[#ffcad4] nav_links">
                         <div class="flex_start gap-1.5">
                             DISCOVER
@@ -183,8 +249,33 @@
                             </span>
                         </div>
                     </router-link>
+                    
                 </div>
             </div>
+
+
+            <!-- Dropdown content -->
+            <div v-if="showNewIn" id="NewIN" class="w-full absolute h-[400px] top-11 border bg-white"
+                @mouseenter="showDropdownNewIn" @mouseleave="hideDropdownNewIn">
+                New in
+            </div>
+
+            <div v-if="showCharmsAndBracelets" id="showCharmsAndBracelets"
+                class="w-full absolute h-[400px] top-11 border bg-white" @mouseenter="showDropdownCharmsAndBracelets"
+                @mouseleave="hideDropdownCharmsAndBracelets">
+                Charms and bracelets
+            </div>
+
+            <div v-if="showRings" id="showRings" class="w-full absolute h-[400px] top-11 border bg-white"
+                @mouseenter="showDropdownRings" @mouseleave="hideDropdownRings">
+                Rings
+            </div>
+
+            <div v-if="showChains" id="showCharmsAndBracelets" class="w-full absolute h-[400px] top-11 border bg-white"
+                @mouseenter="showDropdownChains" @mouseleave="hideDropdownChains">
+                Chains
+            </div>
+
         </div>
 
     </nav>
