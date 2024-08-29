@@ -48,14 +48,14 @@ const isSidebarVisible = ref(false);
 // State to track NewInsidebar visibility
 const isNewInSidebarVisible = ref(false);
 
-
 // Function to toggle the sidebar
 const toggleSidebar = () => {
     isSidebarVisible.value = !isSidebarVisible.value;
 };
 const toggleNewInSidebar = () => {
-    isNewInSidebarVisible.value = !isNewInSidebarVisible.value;
+    isNewInSidebarVisible.value = isNewInSidebarVisible.value;
 }
+
 </script>
 
 <template>
@@ -329,9 +329,6 @@ const toggleNewInSidebar = () => {
         </div>
     </nav>
 
-
-
-
     <!--------Sidebar ------------>
     <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0', { sidebarHidden: !isSidebarVisible }]">
         <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
@@ -390,12 +387,10 @@ const toggleNewInSidebar = () => {
         </div>
     </div>
 
-
-
     <!---------NewInSidebar------>
     <div id="NewInSidebar"
-        :class="['w-[95%] h-[100vh] border bg-white fixed top-0 z-40', { sidebarHidden: !isNewInSidebarVisible }]">
-        <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
+        :class="['w-[95%] h-[100vh] border bg-red-800 fixed top-0 z-40', { sidebarNewIn: !isNewInSidebarVisible }]">
+        <div class="w-full bg-yellow-800 h-[55px] flex justify-end items-center pr-5">
             <div class="flex_start gap-4 cursor-pointer" @click="toggleNewInSidebar">
                 Close
                 <span>
@@ -407,10 +402,8 @@ const toggleNewInSidebar = () => {
             </div>
         </div>
 
-
         <div>
             <ul class="px-2">
-
                 <li @click="toggleNewInSidebar"
                     class="flex_between py-5 border-b border-b-[#d0d1d2] px-5 cursor-pointer">
                     <p>NEW IN</p>
@@ -424,11 +417,11 @@ const toggleNewInSidebar = () => {
         </div>
     </div>
 
-
-
 </template>
 
 <style scoped>
+
+
 .sidebar {
     position: fixed;
     left: -100%;
@@ -444,9 +437,12 @@ const toggleNewInSidebar = () => {
 
 /* Hide the sidebar by default */
 .sidebarHidden {
-    display: none;
+    display: none; 
 }
 
+.sidebarNewIn{
+    display: none;
+}
 
 .sidebar {
     display: block;
