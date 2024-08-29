@@ -59,8 +59,8 @@ const toggleSidebar = () => {
 
 <template>
     <nav class="w-full">
+        
         <div class="border-b-4 border-b-[#ffcad4]">
-
             <!----------Desktop-NAV------------>
             <div class="max_width mx-auto lg:flex hidden items-center justify-between py-4 ">
                 <div class="flex items-center space-x-4">
@@ -128,7 +128,6 @@ const toggleSidebar = () => {
                     </div>
                 </div>
             </div>
-
 
             <!--------MOBILE-NAV--------->
             <div class="max_width mx-auto w-full flex items-center justify-between py-4 lg:hidden block">
@@ -330,7 +329,7 @@ const toggleSidebar = () => {
     </nav>
 
     <!--------Sidebar ------------>
-    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0 left-[1]', { hidden: !isSidebarVisible }]">
+    <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0', { sidebarHidden: !isSidebarVisible }]">
         <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
             <div class="flex_start gap-4 cursor-pointer"
             @click="toggleSidebar"
@@ -404,8 +403,10 @@ const toggleSidebar = () => {
   cursor: pointer;
 }
 
+
+
 /* Hide the sidebar by default */
-.hidden {
+.sidebarHidden {
   display: none;
 }
 

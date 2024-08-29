@@ -1,6 +1,23 @@
 <template>
     <div class="w-full  py-8">
-            <swiper  :slides-per-view="4" :pagination="true" :modules="modules" class="mySwiper bg-gray-50">
+            <swiper :pagination="true" :modules="modules"
+            :breakpoints="{
+            '680': {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation
+            },
+            '768': {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                navigation
+            },
+            '1024': {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                navigation
+            },
+        }" class="mySwiper bg-gray-50">
             <swiper-slide v-for="(item, index) in items" :key="index">
                 <div class="flex flex-col items-center text-center p-4">
                     <div class="mb-4">
