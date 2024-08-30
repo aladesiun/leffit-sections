@@ -42,13 +42,18 @@
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
                     </div>
 
-                    <div class="bg-gray-100 p-4 rounded-lg mb-6">
-                        <h3 class="text-gray-800 font-bold">PANDÒRA</h3>
-                        <p class="text-gray-600 mt-1">Already a member? Log in for faster checkout.</p>
-                        <a href="#" class="text-pink-600 font-medium mt-2 block">Create an account</a>
+                    <div class="bg-[#f5f5f5] mt-2 px-5 pt-5 mb-6 flex justify-between items-start pb-6">
+                        <div>
+                            <h3 class="text-gray-800 font-medium">PANDÒRA</h3>
+                            <p class="text-dark-text text-xs mt-2">Already a member? Log in for faster checkout.</p>
+                            <p class="text-dark-text text-xs mt-6">New to Pandora? <span class="underline">Create an
+                                    account.</span>
+                            </p>
+                        </div>
+
                         <button
-                            class="mt-4 bg-white border border-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg">TO
-                            REGISTER
+                            class=" bg-white border border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] w-[250px] tracking-[4px]">
+                            TO REGISTER
                         </button>
                     </div>
                 </div>
