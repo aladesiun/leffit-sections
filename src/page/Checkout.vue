@@ -274,6 +274,7 @@
                     <div class="top-3 absolute border-[0.5px] border-[#d0d1d2] w-full"></div>
                 </div>
 
+                
                 <div class="mt-9">
                     <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 flex_between !items-start">
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
