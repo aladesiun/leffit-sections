@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
+const billingCheckbox = ref<HTMLInputElement | null>(null);
+const billingAddressDiv = ref<HTMLDivElement | null>(null);
+
+function toggleBillingAddress() {
+    if (billingCheckbox.value && billingAddressDiv.value) {
+        billingAddressDiv.value.style.display = billingCheckbox.value.checked ? 'block' : 'none';
+    }
+}
 </script>
 
 <template>
@@ -55,7 +65,8 @@
                                 fill="black" />
                         </svg>
                     </span>
-                    <h3 class="md:text-lg sm:text-base text-sm font-bold text-dark-text mb-2 uppercase">Delivery of (1 item)</h3>
+                    <h3 class="md:text-lg sm:text-base text-sm font-bold text-dark-text mb-2 uppercase">Delivery of (1
+                        item)</h3>
                 </div>
                 <p class="text-dark-text text-sm">
                     Delivery
@@ -87,10 +98,93 @@
                 </p>
             </div>
 
-
             <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 mt-8">
                 <h2 class="md:text-2xl text-xl font-bold text-dark-text mb-4">Payment</h2>
             </div>
+
+            <div class="mb-5 relative">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" class="text-dark-text" id="billing-checkbox" ref="billingCheckbox"
+                        @click="toggleBillingAddress">
+                    <span class="ml-3 text-dark-text text-xs font-normal leading-4">
+                        Billing address same as shipping address</span>
+                </label>
+            </div>
+
+            <div id="billing-address" ref="billingAddressDiv" class="hidden">
+                <p class="text-[18px] mb-5">
+                    Billing addresss
+                </p>
+
+                <form>
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="first-name">First name
+                            *</label>
+                        <input id="first-name" class="w-full border border-[#d91f46] form_control" type="text">
+                    </div>
+
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="first-name">Surname
+                            *</label>
+                        <input id="first-name" class="w-full border border-[#d91f46] form_control" type="text">
+                    </div>
+
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="address">Street name and house number *</label>
+                        <input id="address" class="w-full border border-gray-300 rounded-lg !pr-20 form_control"
+                            type="text" placeholder="Start typing to find your address">
+                        <span class="absolute top-3 right-4">
+                            <svg width="22" height="22" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 26C5.8 26 0 20.2 0 13C0 5.8 5.8 0 13 0C20.2 0 26 5.8 26 13C26 20.2 20.2 26 13 26ZM13 2C6.9 2 2 6.9 2 13C2 19.1 6.9 24 13 24C19.1 24 24 19.1 24 13C24 6.9 19.1 2 13 2Z"
+                                    fill="black" />
+                                <path d="M22.6821 21.267L31.6621 30.247L30.2481 31.661L21.2681 22.681L22.6821 21.267Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="address_line2">Address Line 2</label>
+                        <input id="qddress_line2" class="w-full border border-[#d91f46] form_control" type="text">
+                    </div>
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="local_authority">Place name*</label>
+                        <input id="local_authority" class="w-full border border-[#d91f46] form_control" type="text">
+                    </div>
+
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="local_authority">Postal Code*</label>
+                        <input id="local_authority" class="w-full border border-[#d91f46] form_control" type="text">
+                    </div>
+
+                    <div class="mb-4 relative">
+                        <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                            for="country">Country*</label>
+                        <input id="country" class="w-full border border-[#d91f46] form_control disabled" type="text">
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div id="payment-method">
+                <p>
+                    Payment Methods
+                </p>
+                <h3 class="md:text-lg sm:text-base text-sm font-bold text-dark-text mb-2 uppercase">
+                    Delivery of (1item)
+                </h3>
+            </div>
+
+
 
 
 
