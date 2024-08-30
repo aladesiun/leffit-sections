@@ -41,7 +41,7 @@
 
                 <div id="ProductImage" class="w-full h-auto">
 
-                    <div class="w-full md:h-[600px] sm:h-[400px] h-[300px] product_wrap">
+                    <div class="w-full md:h-[600px] sm:h-[400px] h-[300px] product_wrap mt-4">
                         <img src="../assets/images/productImg.jpg" class="h-full w-full object-contain"
                             alt="Prd-Image" />
                     </div>

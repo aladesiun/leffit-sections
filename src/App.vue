@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import Navbar from './components/Navbar.vue';
+import Navbar from './components/Navbar/Navbar.vue';
 import SectionProduct from './page/SectionProduct.vue';
+import Home2 from './page/Home2.vue';
 import Cart from './page/Cart.vue';
+import Checkout from './page/Checkout.vue';
 import Footer from './components/Footer.vue';
 //in your `main.js` file
 import '../node_modules/flowbite-vue/dist/index.css'
@@ -10,6 +12,7 @@ import '../node_modules/flowbite-vue/dist/index.css'
 
 <template>
   <Navbar />
+  <Checkout />
   <Home />
   <Home2 />
   <SectionProduct />
