@@ -3,7 +3,7 @@
         <swiper class="bg-primary"  :autoplay="{
       delay: 2500,
       disableOnInteraction: false,
-    }" parallax :slides-per-view="1" :space-between="50" @swiper="onSwiper"
+    }" parallax :slides-per-view="3" :space-between="50" @swiper="onSwiper"
             @slideChange="onSlideChange" :auto   :modules="modules">
             <swiper-slide v-for="item in 5">
                 <div class="text-center block bg-primary">
