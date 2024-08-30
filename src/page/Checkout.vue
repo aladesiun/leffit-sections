@@ -43,7 +43,7 @@
                     <div
                         class="bg-[#f5f5f5] mt-2 px-5 pt-5 mb-6 flex sm:flex-row flex-col justify-between items-start pb-6">
                         <div class="sm:mb-0 mb-6">
-                            <h3 class="text-gray-800 font-medium">PANDÒRA</h3>
+                            <h3 class="text-dark-text font-medium">PANDÒRA</h3>
                             <p class="text-dark-text text-xs mt-2">Already a member? Log in for faster checkout.</p>
                             <p class="text-dark-text text-xs mt-6">New to Pandora? <span class="underline">Create an
                                     account.</span>
@@ -260,11 +260,11 @@
                     <div class="flex justify-between items-start w-full relative z-20">
                         <span class="flex items-center bg-white pl-0">
                             <span
-                                class="flex items-center justify-center h-[27px] w-[27px] rounded-full bg-[#27251f] text-white text-xs">1</span>
+                                class="flex items-center justify-center h-[27px] w-[27px] rounded-full border border-[#d0d1d2] bg-transparent text-[#71706c] text-xs">1</span>
                         </span>
                         <span class="flex items-center bg-white px-3">
                             <span
-                                class="flex items-center justify-center h-[27px] w-[27px] rounded-full border border-[#d0d1d2] text-[#71706c] text-xs">2</span>
+                                class="flex items-center justify-center h-[27px] w-[27px] rounded-full bg-dark-bg text-white text-xs">2</span>
                         </span>
                         <span class="flex items-center bg-white px-3">
                             <span
@@ -284,7 +284,6 @@
                     </div>
                 </div>
 
-
                 <!-- Shipping Address -->
                 <div class="mb-6">
                     <p class="text-[#71706c] text-xs mb-1">Kehinde Daramola</p>
@@ -303,14 +302,26 @@
                     </div>
 
                     <div>
-                        <h3 class="text-lg font-bold text-dark-text mb-2">DELIVERY OF (1 ITEM)</h3>
+                        <h3 class="text-lg font-bold text-dark-text mb-4">DELIVERY OF (1 ITEM)</h3>
                     </div>
 
-
                     <div class="flex justify-between items-start">
-                        <div>
-                            <div class="">
+                        <div class="flex gap-6">
 
+                            <div id="product-image" class="w-[90px] h-[96px] bg-[#f5f5f5]">
+
+                            </div>
+
+                            <div>
+                                <p class="text-dark-text text-base mb-5">
+                                    Engravable Heart Shaped Charm
+                                </p>
+                                <p class="text-[#71706c] text-xs mb-1">
+                                    Product 792015
+                                </p>
+                                <p class="text-[#71706c] text-xs">
+                                    Quantity: <span class="text-dark-text text-xs">1</span>
+                                </p>
                             </div>
                         </div>
 
@@ -318,6 +329,35 @@
                         <p class="text-dark-text text-base font-medium">
                             €39.00
                         </p>
+                    </div>
+
+
+                    <div>
+                        <!-- Delivery Options -->
+                        <div class="mt-4">
+                            <label class="block mb-4 border p-4 cursor-pointer">
+                                <div class="flex items-start">
+                                    <input type="radio" name="delivery-option" class="form-radio h-5 w-5 text-dark-text"
+                                        checked>
+                                    <div class="ml-3">
+                                        <p class="text-dark-text text-sm font-normal">Standard delivery</p>
+                                        <p class="text-[#71706c] text-xs">2-3 working days</p>
+                                    </div>
+                                    <div class="ml-auto text-xs text-dark-text font-noraml">€3.80</div>
+                                </div>
+                            </label>
+                            <label class="block mb-4 border p-4 cursor-pointer">
+                                <div class="flex items-start">
+                                    <input type="radio" name="delivery-option" class="form-radio h-5 w-5 text-dark-text">
+                                    <div class="ml-3">
+                                        <p class="text-dark-text text-sm font-normal">Express delivery</p>
+                                        <p class="text-[#71706c] text-xs">1-2 business days</p>
+                                    </div>
+                                    <div class="ml-auto text-xs text-dark-text font-noraml">€14.00</div>
+                                </div>
+                            </label>
+                        </div>
+
                     </div>
                 </div>
 
