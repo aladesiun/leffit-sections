@@ -15,7 +15,6 @@
 
         <div class="max_width flex justify-between gap-12 mx-auto mt-8">
             <div class="w-full">
-
                 <div class="w-full h-fit relative">
                     <!-- Step Indicator -->
                     <div class="flex justify-between items-start w-full relative z-20">
@@ -37,7 +36,6 @@
 
 
                 <div class="mt-9">
-
                     <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6">
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
                     </div>
@@ -58,6 +56,52 @@
                     </div>
                 </div>
 
+
+                <div>
+                    <!-- Form Fields -->
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2" for="first-name">First name *</label>
+                            <input id="first-name" class="w-full border border-[#d91f46] form_control" type="text">
+                            <p class="text-[#d91f46] text-[11px] mt-1">Enter the first name</p>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="surname">Surname *</label>
+                            <input id="surname" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="text"
+                                placeholder="Enter the surname">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="address">Street name and house
+                                number *</label>
+                            <input id="address" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="text"
+                                placeholder="Start typing to find your address">
+                            <a href="#" class="text-pink-600 font-medium text-sm mt-1 block">Enter your address
+                                manually</a>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="phone-number">Phone number
+                                *</label>
+                            <input id="phone-number" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="tel"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2" for="email">E-mail *</label>
+                            <input id="email" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" class="form-checkbox text-pink-600">
+                                <span class="ml-2 text-gray-600">Yes, sign me up for the Pandora Newsletter.</span>
+                            </label>
+                            <p class="text-gray-500 text-sm">I confirm that I am over 16 years of age. I would like to
+                                receive digital communications (email) from Pandora about Pandora products and exclusive
+                                offers.</p>
+                        </div>
+                        <button class="w-full bg-black text-white font-bold py-3 rounded-lg">NEXT: DELIVERY
+                            METHOD</button>
+                    </form>
+                </div>
             </div>
 
 
