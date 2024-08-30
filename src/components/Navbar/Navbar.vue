@@ -56,11 +56,11 @@ import Chains from './Chains.vue';
 </script>
 
 <template>
-
     <nav class="w-full">
         <div class="border-b-4 border-b-[#ffcad4]">
             <!----------Desktop-NAV------------>
             <div class="max_width mx-auto lg:flex hidden items-center justify-between py-4 ">
+
                 <div class="flex items-center space-x-4">
                     <a href="#" class="text-black text-3xl font-semibold">
                         PANDORA
@@ -68,6 +68,7 @@ import Chains from './Chains.vue';
                 </div>
 
                 <div class="flex items-center gap-8">
+
                     <div class="relative">
                         <input type="text" placeholder="Zoeken" class="border border-[#d0d1d2] site_search">
                         <div class="absolute right-5 top-4">
@@ -81,7 +82,7 @@ import Chains from './Chains.vue';
                     </div>
 
                     <div class="flex space-x-6">
-
+                        
                         <button id="favourites">
                             <svg width="22" height="20" viewBox="0 0 16 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -123,6 +124,7 @@ import Chains from './Chains.vue';
                                     stroke="black" stroke-linecap="round" />
                             </svg>
                         </button>
+
                     </div>
                 </div>
             </div>
@@ -302,7 +304,7 @@ import Chains from './Chains.vue';
             <!-- Dropdown content -->
             <div v-if="showNewIn" id="NewIN" class="w-full absolute h-auto pb-14 top-11 border bg-white z-40"
                 @mouseenter="showDropdownNewIn" @mouseleave="hideDropdownNewIn">
-               <NewIn />
+                <NewIn />
             </div>
 
             <div v-if="showCharmsAndBracelets" id="showCharmsAndBracelets"
@@ -313,13 +315,13 @@ import Chains from './Chains.vue';
 
             <div v-if="showRings" id="showRings" class="w-full absolute h-auto pb-14 top-11 border bg-white z-40"
                 @mouseenter="showDropdownRings" @mouseleave="hideDropdownRings">
-              <Rings />
+                <Rings />
             </div>
 
             <div v-if="showChains" id="showCharmsAndBracelets"
                 class="w-full absolute h-auto pb-14 top-11 border bg-white z-40" @mouseenter="showDropdownChains"
                 @mouseleave="hideDropdownChains">
-              <Chains   />
+                <Chains />
             </div>
         </div>
     </nav>
