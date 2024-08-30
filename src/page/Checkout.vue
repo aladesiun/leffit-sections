@@ -2,11 +2,7 @@
 </script>
 
 <template>
-
-
     <div>
-
-
         <div id="Header" class="flex_between items-center space-x-4 border-b border-b-[#d0d1d2] px-4 py-3">
             <a href="#" class="text-black text-3xl font-semibold">
                 PANDORA
@@ -15,9 +11,6 @@
                 Secure checkout
             </p>
         </div>
-
-
-
 
         <div id="Slide1" class="max_width flex lg:flex-row flex-col justify-between gap-12 mx-auto mt-8">
 
@@ -258,10 +251,6 @@
             </div>
         </div>
 
-
-
-
-
         <div id="slide2" class="max_width flex lg:flex-row flex-col justify-between gap-12 mx-auto mt-8">
 
             <div class="lg:w-full md:w-[700px] w-[94%] mx-auto">
@@ -285,10 +274,7 @@
                     <div class="top-3 absolute border-[0.5px] border-[#d0d1d2] w-full"></div>
                 </div>
 
-
-
                 <div class="mt-9">
-
                     <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 flex_between !items-start">
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
 
@@ -301,12 +287,38 @@
 
                 <!-- Shipping Address -->
                 <div class="mb-6">
-                    <p class="text-gray-800">Kehinde Daramola</p>
-                    <p class="text-gray-800">Kings Street</p>
-                    <p class="text-gray-800">coret, 2</p>
-                    <p class="text-gray-800">The Hague, Netherlands 1000 AA</p>
-                    <p class="text-gray-800">daramolakehinde339@gmail.com</p>
-                    <p class="text-gray-800">09018913599</p>
+                    <p class="text-[#71706c] text-xs mb-1">Kehinde Daramola</p>
+                    <p class="text-[#71706c] text-xs mb-1">Kings Street</p>
+                    <p class="text-[#71706c] text-xs mb-1">coret, 2</p>
+                    <p class="text-[#71706c] text-xs mb-1">The Hague, Netherlands 1000 AA</p>
+                    <p class="text-[#71706c] text-xs mb-1">daramolakehinde339@gmail.com</p>
+                    <p class="text-[#71706c] text-xs mb-1">09018913599</p>
+                </div>
+
+
+
+                <div class="mt-9">
+                    <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6">
+                        <h2 class="text-2xl font-bold text-dark-text mb-4">Delivery method</h2>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-bold text-dark-text mb-2">DELIVERY OF (1 ITEM)</h3>
+                    </div>
+
+
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="">
+
+                            </div>
+                        </div>
+
+
+                        <p class="text-dark-text text-base font-medium">
+                            €39.00
+                        </p>
+                    </div>
                 </div>
 
 
