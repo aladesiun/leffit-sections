@@ -38,7 +38,7 @@
 
                 <div class="mt-9">
 
-                    <div class="border-[0.5px]">
+                    <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6">
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
                     </div>
 
