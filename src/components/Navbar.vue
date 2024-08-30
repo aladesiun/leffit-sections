@@ -56,10 +56,17 @@ const toggleNewInSidebar = () => {
     isNewInSidebarVisible.value = isNewInSidebarVisible.value;
 }
 
+<<<<<<< Updated upstream:src/components/Navbar.vue
+=======
+import NewIn from './NewIn.vue';
+import CharmsAndBracelets from './CharmsAndBracelets.vue';
+import Rings from './Rings.vue';
+import Chains from './Chains.vue';
+
+>>>>>>> Stashed changes:src/components/Navbar/Navbar.vue
 </script>
 
 <template>
-
     <nav class="w-full">
         <div class="border-b-4 border-b-[#ffcad4]">
             <!----------Desktop-NAV------------>
@@ -328,7 +335,6 @@ const toggleNewInSidebar = () => {
 
         </div>
     </nav>
-
     <!--------Sidebar ------------>
     <div id="sidebar" :class="['w-[95%] h-[100vh] border bg-white fixed top-0', { sidebarHidden: !isSidebarVisible }]">
         <div class="w-full bg-[#f5f5f5] h-[55px] flex justify-end items-center pr-5">
