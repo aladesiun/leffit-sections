@@ -274,7 +274,7 @@
                     <div class="top-3 absolute border-[0.5px] border-[#d0d1d2] w-full"></div>
                 </div>
 
-                
+
                 <div class="mt-9">
                     <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 flex_between !items-start">
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
@@ -308,12 +308,10 @@
 
                     <div class="flex justify-between items-start">
                         <div class="flex gap-6">
-
-                            <div id="product-image" class="w-[90px] h-[96px] bg-[#f5f5f5]">
-
-                            </div>
+                            <div id="product-image" class="w-[90px] h-[96px] bg-[#f5f5f5]"></div>
 
                             <div>
+
                                 <p class="text-dark-text text-base mb-5">
                                     Engravable Heart Shaped Charm
                                 </p>
@@ -323,43 +321,48 @@
                                 <p class="text-[#71706c] text-xs">
                                     Quantity: <span class="text-dark-text text-xs">1</span>
                                 </p>
+
                             </div>
                         </div>
-
 
                         <p class="text-dark-text text-base font-medium">
                             €39.00
                         </p>
                     </div>
 
-
-                    <div>
-                        <!-- Delivery Options -->
-                        <div class="mt-4">
-                            <label class="block mb-4 border p-4 cursor-pointer">
-                                <div class="flex items-start">
-                                    <input type="radio" name="delivery-option" class="form-radio h-5 w-5 text-dark-text"
-                                        checked>
-                                    <div class="ml-3">
-                                        <p class="text-dark-text text-sm font-normal">Standard delivery</p>
-                                        <p class="text-[#71706c] text-xs">2-3 working days</p>
-                                    </div>
-                                    <div class="ml-auto text-xs text-dark-text font-noraml">€3.80</div>
+                    <!-- Delivery Options -->
+                    <div class="mt-4 pb-[2px]">
+                        <label class="block mb-4 border border-[] p-4 cursor-pointer">
+                            <div class="flex items-start">
+                                <input type="radio" name="delivery-option" class="form-radio h-5 w-5 text-dark-text"
+                                    checked>
+                                <div class="ml-3">
+                                    <p class="text-dark-text text-sm font-normal">Standard delivery</p>
+                                    <p class="text-[#71706c] text-xs">2-3 working days</p>
                                 </div>
-                            </label>
-                            <label class="block mb-4 border p-4 cursor-pointer">
-                                <div class="flex items-start">
-                                    <input type="radio" name="delivery-option" class="form-radio h-5 w-5 text-dark-text">
-                                    <div class="ml-3">
-                                        <p class="text-dark-text text-sm font-normal">Express delivery</p>
-                                        <p class="text-[#71706c] text-xs">1-2 business days</p>
-                                    </div>
-                                    <div class="ml-auto text-xs text-dark-text font-noraml">€14.00</div>
+                                <div class="ml-auto text-xs text-dark-text font-noraml">€3.80</div>
+                            </div>
+                        </label>
+                        <label class="block mb-4 border p-4 cursor-pointer">
+                            <div class="flex items-start">
+                                <input type="radio" name="delivery-option" class="form-radio h-5 w-5 text-dark-text">
+                                <div class="ml-3">
+                                    <p class="text-dark-text text-sm font-normal">Express delivery</p>
+                                    <p class="text-[#71706c] text-xs">1-2 business days</p>
                                 </div>
-                            </label>
-                        </div>
-
+                                <div class="ml-auto text-xs text-dark-text font-noraml">€14.00</div>
+                            </div>
+                        </label>
                     </div>
+
+
+                    <div class="border-t mt-1 h-[300px]">
+  <div>
+    
+  </div>
+                    </div>
+
+
                 </div>
 
 
