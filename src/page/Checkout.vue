@@ -2,7 +2,6 @@
 </script>
 
 <template>
-
     <div>
         <div class="flex_between items-center space-x-4 border-b border-b-[#d0d1d2] px-4 py-3">
             <a href="#" class="text-black text-3xl font-semibold">
@@ -13,9 +12,9 @@
             </p>
         </div>
 
-        <div class="max_width flex justify-between gap-12 mx-auto mt-8">
-            <div class="w-full">
+        <div class="max_width flex lg:flex-row flex-col justify-between gap-12 mx-auto mt-8">
 
+            <div class="lg:w-full md:w-[700px] w-[94%] mx-auto">
                 <div class="w-full h-fit relative">
                     <!-- Step Indicator -->
                     <div class="flex justify-between items-start w-full relative z-20">
@@ -35,15 +34,13 @@
                     <div class="top-3 absolute border-[0.5px] border-[#d0d1d2] w-full"></div>
                 </div>
 
-
                 <div class="mt-9">
-
                     <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6">
                         <h2 class="text-2xl font-bold text-dark-text mb-4">Shipping Information</h2>
                     </div>
 
-                    <div class="bg-[#f5f5f5] mt-2 px-5 pt-5 mb-6 flex justify-between items-start pb-6">
-                        <div>
+                    <div class="bg-[#f5f5f5] mt-2 px-5 pt-5 mb-6 flex sm:flex-row flex-col justify-between items-start pb-6">
+                        <div class="sm:mb-0 mb-6">
                             <h3 class="text-gray-800 font-medium">PANDÒRA</h3>
                             <p class="text-dark-text text-xs mt-2">Already a member? Log in for faster checkout.</p>
                             <p class="text-dark-text text-xs mt-6">New to Pandora? <span class="underline">Create an
@@ -52,20 +49,108 @@
                         </div>
 
                         <button
-                            class=" bg-white border border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] w-[250px] tracking-[4px]">
+                            class=" bg-white border border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] sm:w-[250px] w-full tracking-[4px]">
                             TO REGISTER
                         </button>
                     </div>
                 </div>
 
+
+                <div>
+                    <!-- Form Fields -->
+                    <form>
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="first-name">First name
+                                *</label>
+                            <input id="first-name" class="w-full border border-[#d91f46] form_control" type="text">
+                            <p class="text-[#d91f46] text-[11px] mt-1">Enter the first name</p>
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="surname">Surname *</label>
+                            <input id="surname" class="w-full border border-gray-300 rounded-lg p-2 form_control"
+                                type="text">
+                            <p class="text-[#d91f46] text-[11px] mt-1">Voer de achternaam in</p>
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="address">Street name and house number *</label>
+                            <input id="address" class="w-full border border-gray-300 rounded-lg !pr-20 form_control"
+                                type="text" placeholder="Start typing to find your address">
+                            <span class="absolute top-3 right-4">
+                                <svg width="22" height="22" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 26C5.8 26 0 20.2 0 13C0 5.8 5.8 0 13 0C20.2 0 26 5.8 26 13C26 20.2 20.2 26 13 26ZM13 2C6.9 2 2 6.9 2 13C2 19.1 6.9 24 13 24C19.1 24 24 19.1 24 13C24 6.9 19.1 2 13 2Z"
+                                        fill="black" />
+                                    <path
+                                        d="M22.6821 21.267L31.6621 30.247L30.2481 31.661L21.2681 22.681L22.6821 21.267Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                            <a href="#" class="text-[#d91f46] text-[11px] mt-1">Enter street name and house number.</a>
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="address_line2">Address Line 2</label>
+                            <input id="qddress_line2" class="w-full border border-[#d91f46] form_control" type="text">
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="local_authority">Local authority*</label>
+                            <input id="local_authority" class="w-full border border-[#d91f46] form_control" type="text">
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="local_authority">Postal Code*</label>
+                            <input id="local_authority" class="w-full border border-[#d91f46] form_control" type="text">
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="country">Country*</label>
+                            <input id="country" class="w-full border border-[#d91f46] form_control disabled"
+                                type="text">
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="phone_number">Phone number*</label>
+                            <input id="phone_number" class="w-full border border-[#d91f46] form_control disabled"
+                                type="text">
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="phone_number">E-mail*</label>
+                            <input id="phone_number" class="w-full border border-[#d91f46] form_control disabled"
+                                type="email">
+                        </div>
+
+                        <div class="mb-7 relative">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" class="form-checkbox text-dark-bg">
+                                <span class="ml-3 text-dark-text text-xs font-normal leading-4">Yes, sign me up for the Pandora Newsletter. I confirm
+                                    that I am over 16 years of age. I would like to receive digital communications
+                                    (email) from Pandora about Pandora products and exclusive offers</span>
+                            </label>
+                        </div>
+
+                        <button class="w-full bg-dark-bg hover:bg-black ease-in-out duration-150 text-white font-normal sm:text-sm text-xs tracking-[4px] py-3">NEXT: DELIVERY
+                            METHOD
+                        </button>
+                    </form>
+                </div>
             </div>
 
 
-
-
-
-
-            <div class="w-[457px] border-t-[6px] border-t-[#ffcad4]">
+            <div  id="Order-Overview" class="lg:w-[557px] md:w-[700px] w-[94%] mx-auto border-t-[6px] border-t-[#ffcad4]">
                 <div class="h-auto bg-[#f5f5f5] w-full pt-7 pb-4 px-4">
                     <p class="text-black text-xl font-semibold">
                         ORDER OVERVIEW
@@ -159,6 +244,10 @@
                 </div>
             </div>
         </div>
+
+
+
+        
     </div>
 
 </template>
