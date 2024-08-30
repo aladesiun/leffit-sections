@@ -60,36 +60,76 @@
                 <div>
                     <!-- Form Fields -->
                     <form>
-                        <div class="mb-4">
-                            <label class="block text-[#71706c] text-[11px] font-normal mb-2" for="first-name">First name *</label>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="first-name">First name
+                                *</label>
                             <input id="first-name" class="w-full border border-[#d91f46] form_control" type="text">
                             <p class="text-[#d91f46] text-[11px] mt-1">Enter the first name</p>
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="surname">Surname *</label>
-                            <input id="surname" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="text"
-                                placeholder="Enter the surname">
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="surname">Surname *</label>
+                            <input id="surname" class="w-full border border-gray-300 rounded-lg p-2 form_control"
+                                type="text">
+                            <p class="text-[#d91f46] text-[11px] mt-1">Voer de achternaam in</p>
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="address">Street name and house
-                                number *</label>
-                            <input id="address" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="text"
-                                placeholder="Start typing to find your address">
-                            <a href="#" class="text-pink-600 font-medium text-sm mt-1 block">Enter your address
-                                manually</a>
+
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="address">Street name and house number *</label>
+                            <input id="address" class="w-full border border-gray-300 rounded-lg !pr-20 form_control"
+                                type="text" placeholder="Start typing to find your address">
+                            <span class="absolute top-3 right-4">
+                                <svg width="22" height="22" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 26C5.8 26 0 20.2 0 13C0 5.8 5.8 0 13 0C20.2 0 26 5.8 26 13C26 20.2 20.2 26 13 26ZM13 2C6.9 2 2 6.9 2 13C2 19.1 6.9 24 13 24C19.1 24 24 19.1 24 13C24 6.9 19.1 2 13 2Z"
+                                        fill="black" />
+                                    <path
+                                        d="M22.6821 21.267L31.6621 30.247L30.2481 31.661L21.2681 22.681L22.6821 21.267Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                            <a href="#" class="text-[#d91f46] text-[11px] mt-1">Enter street name and house number.</a>
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="phone-number">Phone number
+
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="Address_line2">Address Line 2</label>
+                            <input id="Address_line2" class="w-full border border-[#d91f46] form_control" type="text">
+                            <p class="text-[#d91f46] text-[11px] mt-1">Enter the first name</p>
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="Local_authority">Local authority*</label>
+                            <input id="Local_authority" class="w-full border border-[#d91f46] form_control" type="text">
+                            <p class="text-[#d91f46] text-[11px] mt-1">Enter the first name</p>
+                        </div>
+
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="phone-number">Phone number
                                 *</label>
-                            <input id="phone-number" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="tel"
-                                placeholder="Enter your phone number">
+                            <input id="phone-number" class="w-full border border-gray-300 rounded-lg p-2 form_control"
+                                type="tel">
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 font-medium mb-2" for="email">E-mail *</label>
-                            <input id="email" class="w-full border border-gray-300 rounded-lg p-2 form_control" type="email"
-                                placeholder="Enter your email">
+
+
+                        <div class="mb-4 relative">
+                            <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
+                                for="email">E-mail *</label>
+                            <input id="email" class="w-full border border-gray-300 rounded-lg p-2 form_control"
+                                type="email" placeholder="Enter your email">
                         </div>
-                        <div class="mb-4">
+
+                        <div class="mb-4 relative">
                             <label class="inline-flex items-center">
                                 <input type="checkbox" class="form-checkbox text-pink-600">
                                 <span class="ml-2 text-gray-600">Yes, sign me up for the Pandora Newsletter.</span>
@@ -98,8 +138,10 @@
                                 receive digital communications (email) from Pandora about Pandora products and exclusive
                                 offers.</p>
                         </div>
+
                         <button class="w-full bg-black text-white font-bold py-3 rounded-lg">NEXT: DELIVERY
-                            METHOD</button>
+                            METHOD
+                        </button>
                     </form>
                 </div>
             </div>
