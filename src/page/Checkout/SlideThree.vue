@@ -118,29 +118,33 @@ const selectMethod = (methodId: string) => {
                 </p>
             </div>
 
-            <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 mt-8">
+            <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 mt-7">
                 <h2 class="md:text-2xl text-xl font-bold text-dark-text mb-4">Payment</h2>
             </div>
 
             <div class="mb-8">
-                <Button icon="pi pi-arrow-left" @click="visibleRight = true" />
                 <button @click="visibleRight = true"
                     class=" bg-white border coupon_btn border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] w-full tracking-[2px] flex_center">
                     <span class="mr-3">
                         <svg width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 7V6H6V0H7V6H13V7H7V13H6V7H0Z" fill="black" />
                         </svg>
-                    </span> ADD COUPON CODE
+                    </span> Coupon
                 </button>
 
-                <Drawer v-model:visible="visibleRight" header="Right Drawer" position="right">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</Drawer>
+                <Drawer class="bg-white p-5 z-50" v-model:visible="visibleRight" header="Right Drawer" position="right">
+                    <div class="bg-white h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </Drawer>
+
             </div>
 
             <div class="mb-5 relative">
 
-                <label class="inline-flex items-center">
+                <label class="inline-flex items-center cursor-pointer">
                     <input type="checkbox" class="text-dark-text h-5 w-5" id="billing-checkbox" ref="billingCheckbox"
                         @click="toggleBillingAddress">
                     <span class="ml-3 text-dark-text text-xs font-normal leading-4">
