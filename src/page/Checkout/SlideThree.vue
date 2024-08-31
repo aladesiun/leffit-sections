@@ -1,15 +1,24 @@
 <script setup lang="ts">
+
 import { ref } from 'vue';
 import Ideal from '../../assets/images/pay/ideal.png';
+import Button from 'primevue/button';
+import Drawer from 'primevue/drawer';
+
+
+// Declare reactive references
+const visibleRight = ref(false);
 const billingCheckbox = ref<HTMLInputElement | null>(null);
 const billingAddressDiv = ref<HTMLDivElement | null>(null);
 
+
+// Define methods
 function toggleBillingAddress() {
     if (billingCheckbox.value && billingAddressDiv.value) {
         billingAddressDiv.value.style.display = billingCheckbox.value.checked ? 'block' : 'none';
     }
 }
-
+// Define methods array
 const methods = [
     { id: 'ideal', name: 'iDEAL', icon: '📱', img: Ideal },
     { id: 'credit-card', name: 'Credit Card', icon: '💳', img: Ideal },
@@ -17,8 +26,8 @@ const methods = [
     { id: 'paypal', name: 'PayPal', icon: '💸', img: Ideal },
 ];
 
+// Define selectedMethod and selection function
 const selectedMethod = ref<string>('paypal');
-
 const selectMethod = (methodId: string) => {
     selectedMethod.value = methodId;
 };
@@ -28,7 +37,6 @@ const selectMethod = (methodId: string) => {
     <div class="lg:w-full md:w-[700px] w-[94%] mx-auto">
 
         <div class="w-full h-fit relative">
-
             <!-- Step Indicator -->
             <div class="flex justify-between items-start w-full relative z-20">
                 <span class="flex items-center bg-white pl-0">
@@ -66,6 +74,7 @@ const selectMethod = (methodId: string) => {
                     To process
                 </p>
             </div>
+
             <div>
                 <div class="flex">
                     <span class="mr-3">
@@ -86,6 +95,7 @@ const selectMethod = (methodId: string) => {
                     Standard delivery (2-3 working days)
                 </p>
             </div>
+
             <div class="mt-4">
                 <div class="flex">
                     <span class="mr-3">
@@ -107,23 +117,43 @@ const selectMethod = (methodId: string) => {
                     No gift wrapping selected
                 </p>
             </div>
+
             <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 mt-8">
                 <h2 class="md:text-2xl text-xl font-bold text-dark-text mb-4">Payment</h2>
             </div>
 
+            <div class="mb-8">
+                <Button icon="pi pi-arrow-left" @click="visibleRight = true" />
+                <button @click="visibleRight = true"
+                    class=" bg-white border coupon_btn border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] w-full tracking-[2px] flex_center">
+                    <span class="mr-3">
+                        <svg width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7V6H6V0H7V6H13V7H7V13H6V7H0Z" fill="black" />
+                        </svg>
+                    </span> ADD COUPON CODE
+                </button>
+
+                <Drawer v-model:visible="visibleRight" header="Right Drawer" position="right">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</Drawer>
+            </div>
+
             <div class="mb-5 relative">
+
                 <label class="inline-flex items-center">
-                    <input type="checkbox" class="text-dark-text" id="billing-checkbox" ref="billingCheckbox"
+                    <input type="checkbox" class="text-dark-text h-5 w-5" id="billing-checkbox" ref="billingCheckbox"
                         @click="toggleBillingAddress">
                     <span class="ml-3 text-dark-text text-xs font-normal leading-4">
                         Billing address same as shipping address</span>
                 </label>
+
             </div>
 
             <div id="billing-address" ref="billingAddressDiv" class="hidden">
                 <p class="text-[18px] mb-5">
                     Billing addresss
                 </p>
+
                 <form>
                     <div class="mb-4 relative">
                         <label class="block text-[#71706c] text-[11px] font-normal mb-2 absolute left-5 top-[6px]"
@@ -174,8 +204,9 @@ const selectMethod = (methodId: string) => {
                         <input id="country" class="w-full border border-[#d91f46] form_control disabled" type="text">
                     </div>
                 </form>
-            </div>
 
+
+            </div>
 
             <div id="payment-method">
                 <p class="uppercase text-lg font-semibold mb-6">
@@ -189,8 +220,8 @@ const selectMethod = (methodId: string) => {
                     <div class="flex items-center">
                         <input type="radio" :id="method.id" :value="method.id" v-model="selectedMethod"
                             class="mr-3 text-dark-text h-6 w-6" />
-                        <label :for="method.id" class="text-lg font-medium text-dark-text pl-3">
-                            <div class="flex_start gap-5">
+                        <label :for="method.id" class="text-lg font-medium text-dark-text sm:pl-3 pl-0">
+                            <div class="flex_start sm:gap-5 gap-1">
                                 <img :src="method.img" class="w-[40px] gap-10" alt="method.name" />
                                 <p class="text-base"> {{ method.name }}</p>
                             </div>
@@ -222,12 +253,13 @@ const selectMethod = (methodId: string) => {
 
             <div class="mt-7 pb-16">
                 <p class=" text-dark-text text-xs">
-                    I accept the <span><a href="#" class="underline">terms of use </a></span>. To read the privacy policy click here.
+                    I accept the <span><a href="#" class="underline">terms of use </a></span>. To read the privacy
+                    policy click here.
                 </p>
                 <button
-                    class="w-full bg-dark-bg hover:bg-black ease-in-out duration-150 text-white font-normal text-xs tracking-[4px] h-[45px] mt-8">PLACE YOUR ORDER</button>
+                    class="w-full bg-dark-bg hover:bg-black ease-in-out duration-150 text-white font-normal text-xs tracking-[4px] h-[45px] mt-8">PLACE
+                    YOUR ORDER</button>
             </div>
-
         </div>
     </div>
 
@@ -323,6 +355,13 @@ const selectMethod = (methodId: string) => {
             <img src="https://img.icons8.com/color/48/000000/apple-pay.png" class="h-8" alt="Apple Pay">
         </div>
     </div>
+
+
+
+    <div class="card flex justify-center">
+
+    </div>
+
 </template>
 
 <style scoped></style>
