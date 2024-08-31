@@ -368,8 +368,13 @@ const selectMethod = (methodId: string) => {
                 </div>
 
                 <div class="flex items-center space-x-4">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" class="h-6 w-6"
-                        alt="Need more help? Call us">
+                     <span>
+                        <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.78418 16.1867L4.78418 16.1867M1.99818 19.1867L10.5702 19.1867C11.5162 19.1867 12.2842 18.3807 12.2842 17.3867L12.2842 2.98669C12.2842 1.99269 11.5162 1.18669 10.5702 1.18669L1.99818 1.18669C1.05118 1.18669 0.28418 1.99269 0.28418 2.98669L0.28418 17.3867C0.28418 18.3807 1.05118 19.1867 1.99818 19.1867Z"
+                                stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
                     <div>
                         <h4 class="font-normal">Need more help? Call us</h4>
                         <p class="text-[#71706c] text-xs mt-1">FREE phone number 0800 022 6409*<br>Mon - Fri
