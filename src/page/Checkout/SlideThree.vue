@@ -143,7 +143,6 @@ const selectMethod = (methodId: string) => {
                         <div class="mb-4 relative">
                             <input id="country" class="w-full border border-[#d91f46] pl-5 placeholder:text-xs placeholder:text-[#71706c]"
                                 type="text"
-                                
                             placeholder="Coupon code"    
                             >
                         </div>
