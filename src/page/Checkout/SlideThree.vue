@@ -122,6 +122,7 @@ const selectMethod = (methodId: string) => {
                 <h2 class="md:text-2xl text-xl font-bold text-dark-text mb-4">Payment</h2>
             </div>
 
+
             <div class="mb-8">
                 <button @click="visibleRight = true"
                     class=" bg-white border coupon_btn border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] w-full tracking-[2px] flex_center">
@@ -129,17 +130,36 @@ const selectMethod = (methodId: string) => {
                         <svg width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 7V6H6V0H7V6H13V7H7V13H6V7H0Z" fill="black" />
                         </svg>
-                    </span> Coupon
+                    </span> ADD COUPON CODE
                 </button>
 
-                <Drawer class="bg-white p-5 z-50" v-model:visible="visibleRight" header="Right Drawer" position="right">
-                    <div class="bg-white h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                </Drawer>
 
+                <div class="coupon_code">
+                    <Drawer class="bg-white p-5 z-50" v-model:visible="visibleRight" position="right">
+                        <div class="border-b-[0.5px] border-b-[#d0d1d2] mb-6 flex_between !items-start pt-7">
+                            <h2 class="md:text-2xl text-lg font-bold text-dark-text mb-4">Coupon Code</h2>
+                        </div>
+
+                        <div class="mb-4 relative">
+                            <input id="country" class="w-full border border-[#d91f46] pl-5 placeholder:text-xs placeholder:text-[#71706c]"
+                                type="text"
+                                
+                            placeholder="Coupon code"    
+                            >
+                        </div>
+
+                        <button
+                            class="w-full bg-dark-bg hover:bg-black ease-in-out duration-150 text-white font-normal text-xs tracking-[3px] h-[45px] mt-8">
+                            APPLY
+                        </button>
+
+                        <button
+                            @click="visibleRight = false"
+                            class=" bg-white  mt-5 border coupon_btn border-dark-border hover:bg-dark-bg hover:text-white ease-in-out duration-150 text-dark-text  font-normal text-xs h-[45px] w-full tracking-[2px] flex_center">
+                            CANCEL
+                        </button>
+                    </Drawer>
+                </div>
             </div>
 
             <div class="mb-5 relative">
@@ -254,7 +274,6 @@ const selectMethod = (methodId: string) => {
                 </div>
             </div>
 
-
             <div class="mt-7 pb-16">
                 <p class=" text-dark-text text-xs">
                     I accept the <span><a href="#" class="underline">terms of use </a></span>. To read the privacy
@@ -297,10 +316,12 @@ const selectMethod = (methodId: string) => {
             <a href="#" class="text-dark-text text-[14px] font-normal underline">To process</a>
         </div>
 
+
         <div class="border-t border-t-[#00000020] pt-5">
 
             <!-- Information Section -->
             <div class="space-y-4 text-dark-">
+
                 <div class="flex items-center space-x-4">
                     <img src="https://img.icons8.com/ios-filled/50/000000/delivery.png" class="h-6 w-6" alt="Delivery">
                     <div>
@@ -346,6 +367,7 @@ const selectMethod = (methodId: string) => {
                         </p>
                     </div>
                 </div>
+
             </div>
         </div>
 

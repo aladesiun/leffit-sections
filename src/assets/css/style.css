@@ -90,6 +90,17 @@ input:focus {
      stroke: #fff!important;
 }
 
+
+.p-drawer{
+  padding: 0px!important;
+}
+.p-drawer-header{
+  display: none!important;
+}
+.p-drawer-right .p-drawer{
+  width: 374px!important;
+}
+
 @media only screen and (max-width: 1300px) {
   .max_width {
     width: 98%;
