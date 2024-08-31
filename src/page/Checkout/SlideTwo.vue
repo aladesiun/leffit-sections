@@ -285,11 +285,12 @@
 
         <!-- Payment Icons -->
         <div class="mt-6 flex space-x-4 justify-center">
-            <img src="https://img.icons8.com/color/48/000000/paypal.png" class="h-8" alt="Paypal">
-            <img src="https://img.icons8.com/color/48/000000/visa.png" class="h-8" alt="Visa">
-            <img src="https://img.icons8.com/color/48/000000/mastercard.png" class="h-8" alt="Mastercard">
-            <img src="https://img.icons8.com/color/48/000000/klarnalogo.png" class="h-8" alt="Klarna">
-            <img src="https://img.icons8.com/color/48/000000/ideal.png" class="h-8" alt="iDeal">
+            <img src="../../assets/images/Paypal-dark.svg" class="h-8 w-8" alt="Paypal">
+                        <img src="../../assets/images/Visa-dark.svg" class="h-8 w-8" alt="Visa">
+
+            <img src="../../assets/images/MasterCard-dark.svg" class="h-8 w-8" alt="Mastercard">
+            <img src="../../assets/images/Klarna.svg" class="h-8 w-8" alt="Klarna">
+            <img src="../../assets/images/iDeal.svg" class="h-8 w-8" alt="iDeal">
             <img src="https://img.icons8.com/color/48/000000/apple-pay.png" class="h-8" alt="Apple Pay">
         </div>
     </div>
